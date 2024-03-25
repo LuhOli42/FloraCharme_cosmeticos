@@ -53,6 +53,13 @@
 
 .lancamentos__imagem {
   width: 100%;
+  border-radius: 10px;
   height: 100%;
   object-fit: cover;
+}
+
+.lancamentos__hr {
+  margin-top: 3em;
+  border: 1px solid var(--cor-roxo-claro);
+  width: 90%;
 }
