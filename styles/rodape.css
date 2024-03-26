@@ -1,0 +1,89 @@
+.rodape {
+  padding: 2em;
+  background-color: var(--cor-creme-escuro);
+  color: var(--cor-background);
+}
+
+.rodape__logo {
+  font-family: var(--font-principal);
+  font-size: 1.5em;
+  font-weight: 400;
+  padding-bottom: 1em;
+}
+
+.rodape-logo-cor {
+  color: var(--cor-creme-claro);
+  font-weight: 500;
+}
+
+.rodape__paragrafo {
+  text-align: justify;
+  padding-bottom: 1em;
+  font-family: var(--font-secundaria);
+  line-height: 1.5;
+}
+
+.rodape__titulo {
+  display: flex;
+  list-style-type: circle;
+  font-weight: 600;
+  font-size: 2em;
+  font-family: var(--font-principal);
+  padding-bottom: 0.5em;
+}
+
+.rodape__titulo-bolinha {
+  font-size: 0.5em;
+  padding-right: 0.5em;
+  padding-top: 0.3em;
+}
+
+.rodape__cadastre-email {
+  top: 80%;
+  left: 0px;
+  background-color: transparent;
+  border: 1px solid var(--cor-background);
+  color: var(--cor-background);
+  border-radius: 24px;
+  padding: 1em;
+  width: 100%;
+}
+
+.rodape__cadastre-email::placeholder {
+  font-family: var(--fonte-principal);
+  text-align: left;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 2em;
+  color: var(--cor-background);
+}
+
+.rodape__lista-container {
+  padding: 2em 0;
+  display: flex;
+
+  gap: 20%;
+}
+
+.rodape__lista {
+  border-left: 1px solid var(--cor-background);
+  padding: 1em;
+}
+
+.rodape__lista-titulo {
+  padding-bottom: 1em;
+  font-size: 1.5em;
+  font-family: var(--font-principal);
+}
+
+.rodape__lista-item {
+  font-family: var(--font-secundaria);
+  padding-bottom: 0.5em;
+  text-decoration: none;
+  color: var(--cor-background);
+}
+
+.rodape__lista-item a {
+  text-decoration: none;
+  color: var(--cor-background);
+}

@@ -1,15 +1,20 @@
-@import url("./styles/header.css");
+@import url("./styles/cabecalho.css");
 @import url("./styles/lancamentos.css");
 @import url("./styles/sobre-nos.css");
+@import url("./styles/produtos.css");
+@import url("./styles/clientes.css");
+@import url("./styles//rodape.css");
 
 :root {
   /* cores */
   --cor-background: #f6f6f6;
+  --cor-card: #ffd8cc;
   --cor-texto-principal: #1e1d24;
   --cor-roxo-escuro: #322f38;
   --cor-roxo-claro: #77758d;
   --cor-creme-claro: #ddb0b0;
   --cor-creme-escuro: #914848;
+  --cor-estrelas: #c2c23b;
 
   /* fonts */
   --font-principal: "Inter", sans-serif;
@@ -18,4 +23,9 @@
 
 body {
   background-color: var(--cor-background);
+}
+
+.section__hr {
+  border: 1px solid var(--cor-roxo-claro);
+  width: 90%;
 }
