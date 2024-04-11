@@ -99,3 +99,9 @@
     font-size: 1em;
   }
 }
+
+@media screen and (min-width: 1440px) {
+  .sobre-nos {
+    padding: 4em 15em;
+  }
+}

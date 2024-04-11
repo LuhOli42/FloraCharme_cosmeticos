@@ -91,3 +91,9 @@
     margin-top: 1em;
   }
 }
+
+@media screen and (min-width: 1440px) {
+  .clientes {
+    padding: 4em 15em;
+  }
+}

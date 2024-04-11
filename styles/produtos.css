@@ -84,3 +84,9 @@
     font-size: 1.5em;
   }
 }
+
+@media screen and (min-width: 1440px) {
+  .produtos {
+    padding: 4em 15em;
+  }
+}

@@ -29,3 +29,9 @@ body {
   border: 1px solid var(--cor-roxo-claro);
   width: 90%;
 }
+
+@media screen and (min-width: 1440px) {
+  .section__hr {
+    width: 75%;
+  }
+}

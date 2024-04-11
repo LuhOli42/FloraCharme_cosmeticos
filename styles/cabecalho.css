@@ -24,7 +24,8 @@
 .lista-menu,
 .menu-hamburguer__botao,
 .pesquisa__botao,
-.cabecalho__titulo {
+.cabecalho__titulo,
+.cabecalho__menu {
   display: none;
 }
 
@@ -137,5 +138,28 @@
   }
   #barra-de-pesquisa::placeholder {
     padding: 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .cabecalho {
+    justify-content: space-around;
+  }
+  .cabecalho__menu {
+    display: flex;
+  }
+  .cabecalho__menu-hamburguer {
+    display: none;
+  }
+  .cabecalho__titulo {
+    padding-left: 2em;
+  }
+
+  .cabecalho__menu-link {
+    text-decoration: none;
+    padding: 0.5em;
+    color: var(--cor-roxo-escuro);
+    font-family: var(--font-secundaria);
+    font-size: 1em;
   }
 }
