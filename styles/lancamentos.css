@@ -11,6 +11,10 @@
   font-family: var(--font-principal);
 }
 
+.lancamentos__titulo-ano {
+  display: none;
+}
+
 .lancamentos__titulo-bolinha {
   font-size: 0.5em;
   padding-right: 0.5em;
@@ -56,4 +60,39 @@
   border-radius: 10px;
   height: 100%;
   object-fit: cover;
+}
+
+@media screen and (min-width: 1024px) {
+  .lancamentos {
+    padding: 4em;
+  }
+
+  .lancamentos__titulo {
+    font-size: 4em;
+  }
+  .lancamentos__titulo-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .lancamentos__titulo-ano {
+    display: block;
+    font-weight: 600;
+    font-size: 8em;
+    color: var(--cor-creme-escuro);
+    font-family: var(--font-principal);
+    opacity: 0.2;
+  }
+  .lancamentos__container {
+    margin-top: -2.5em;
+    font-size: 2em;
+  }
+  .lancamentos__preco {
+    width: 120px;
+  }
+
+  .lancamentos__container-imagem {
+    padding: 0 2em 0;
+    height: 500px;
+  }
 }

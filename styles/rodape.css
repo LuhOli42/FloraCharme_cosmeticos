@@ -87,3 +87,20 @@
   text-decoration: none;
   color: var(--cor-background);
 }
+
+@media screen and (min-width: 1024px) {
+  .rodape {
+    display: flex;
+    gap: 4em;
+  }
+  .rodape__container {
+    width: 50%;
+  }
+  .rodape__logo {
+    font-size: 4.5em;
+    padding-bottom: 0.5em;
+  }
+  .rodape__paragrafo {
+    font-size: 1.1em;
+  }
+}

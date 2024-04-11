@@ -72,3 +72,30 @@
   border: 1px solid var(--cor-roxo-claro);
   width: 90%;
 }
+
+@media screen and (min-width: 1024px) {
+  .sobre-nos {
+    padding: 4em;
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+  }
+  .sobre-nos__container {
+    width: 50%;
+  }
+  .sobre-nos__titulo {
+    font-size: 4em;
+  }
+  .sobre-nos__subtitulo {
+    font-size: 1.5em;
+  }
+  .sobre-nos__texto {
+    font-size: 1.2em;
+  }
+  .sobre-nos__botao-leia-mais {
+    padding: 1em 4em;
+    margin-left: 35%;
+    margin-top: 2em;
+    font-size: 1em;
+  }
+}

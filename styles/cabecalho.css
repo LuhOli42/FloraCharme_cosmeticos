@@ -118,3 +118,24 @@
 .pesquisa__botao:checked ~ #barra-de-pesquisa {
   display: block;
 }
+
+@media screen and (min-width: 1024px) {
+  .cabecalho__titulo {
+    display: block;
+    font-size: 2em;
+  }
+
+  .cabecalho__titulo-abreviado,
+  .cabecalho__pesquisa {
+    display: none;
+  }
+
+  #barra-de-pesquisa {
+    display: block;
+    position: relative;
+    width: 30em;
+  }
+  #barra-de-pesquisa::placeholder {
+    padding: 0;
+  }
+}

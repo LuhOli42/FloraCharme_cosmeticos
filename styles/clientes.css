@@ -19,13 +19,14 @@
 
 .clientes__card {
   border-radius: 2em;
-  margin-top: 2em;
-  height: 80%;
+  height: 50%;
+  width: 60%;
   padding: 2em;
   background-color: var(--cor-card);
   display: flex;
   justify-content: space-between;
   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+  margin-left: 5%;
 }
 
 .clientes__card-texto-container {
@@ -60,4 +61,33 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.clientes .swiper {
+  padding-top: 2em;
+  padding-left: 2em;
+}
+.clientes .clientes .swiper-wrapper {
+  padding-top: 2em;
+  align-items: center;
+  gap: 10px;
+}
+
+.clientes .swiper-slide {
+  align-items: center;
+  justify-content: space-around;
+}
+
+@media screen and (min-width: 1024px) {
+  .clientes {
+    padding: 4em;
+  }
+  .clientes__titulo {
+    font-size: 4em;
+  }
+  .clientes__card {
+    padding: 3em 5em;
+    margin-left: 10%;
+    margin-top: 1em;
+  }
 }
