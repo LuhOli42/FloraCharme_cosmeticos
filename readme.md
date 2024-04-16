@@ -1,6 +1,6 @@
 <p align="center"><b>Flora Charme - Projeto Front-end</b></p>
 
-![Site-image]()
+![Site-image](https://imgur.com/a/xPvRDJm)
 
 ## About
 

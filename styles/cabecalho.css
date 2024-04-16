@@ -85,7 +85,7 @@
   width: 24px;
   height: 24px;
   margin-top: 8px;
-  background-image: url("../assets/images/barra-de-pesquisa/Lupa.svg");
+  background-image: url("../assets/images/header/Lupa.svg");
   display: inline-block;
   background-repeat: no-repeat;
   filter: invert(60%);
@@ -111,7 +111,7 @@
   font-weight: 400;
   padding: 2em;
   color: var(--cor-creme-claro);
-  background: url("../assets/images/barra-de-pesquisa/Lupa.svg") no-repeat;
+  background: url("../assets/images/header/Lupa.svg") no-repeat;
   background-position: 1em;
   filter: invert(30%);
 }
