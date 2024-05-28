@@ -14,7 +14,7 @@
     />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="./styles/home/home.css" />
+    <link rel="stylesheet" href="./styles/pages/home.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -30,13 +30,13 @@
     <nav class="mobile__nav-bar">
       <div class="mobile__nav-bar-smartphone">
         <div class="container__mobile-nav">
-          <a href="#carrinho" class="mobile__icons"
+          <a href="./pages/carrinho.html" class="mobile__icons"
             ><img src="./assets/images/icons/Carrinho.png" alt="Carrinho"
           /></a>
-          <a href="#favoritos" class="mobile__icons"
+          <a href="./pages/favoritos.html" class="mobile__icons"
             ><img src="./assets/images/icons/Coracao.png" alt="Favoritos"
           /></a>
-          <a href="#perfil" class="mobile__icons"
+          <a href="./pages/login.html" class="mobile__icons"
             ><img src="./assets/images/icons/Perfil.png" alt="Perfil"
           /></a>
           <div class="container__mobile-menu-hamburguer">
@@ -53,13 +53,17 @@
               />
             </label>
             <ul class="mobile-lista-menu">
-              <li class="mobile-lista-menu__item"><a href="#">Home</a></li>
-              <li class="mobile-lista-menu__item"><a href="#">Produtos</a></li>
               <li class="mobile-lista-menu__item">
-                <a href="#lancamentos">Sobre-nós</a>
+                <a href="./index.html">Home</a>
               </li>
               <li class="mobile-lista-menu__item">
-                <a href="#contatos">Contatos</a>
+                <a href="./pages/produtos.html">Produtos</a>
+              </li>
+              <li class="mobile-lista-menu__item">
+                <a href="./pages/produtos.html">Sobre-nós</a>
+              </li>
+              <li class="mobile-lista-menu__item">
+                <a href="./pages/contato.html">Contatos</a>
               </li>
             </ul>
           </div>
@@ -67,14 +71,14 @@
       </div>
       <div class="mobile__nav-bar-tablet">
         <div class="tablet__header">
-          <a href="#home"
+          <a href="./index.html"
             ><img
               src="./assets/images/icons/Logo-inteira.png"
               alt="Logo Flora Charme"
               class="tablet__logo-icon"
           /></a>
           <div class="container__tablet">
-            <a href="#perfil"
+            <a href="./pages/login.html"
               ><img
                 src="./assets/images/icons/Perfil.png"
                 alt="Perfil"
@@ -94,15 +98,17 @@
                 />
               </label>
               <ul class="tablet-lista-menu">
-                <li class="tablet-lista-menu__item"><a href="#">Home</a></li>
                 <li class="tablet-lista-menu__item">
-                  <a href="#">Produtos</a>
+                  <a href="./index.html">Home</a>
                 </li>
                 <li class="tablet-lista-menu__item">
-                  <a href="#lancamentos">Sobre-nós</a>
+                  <a href="./pages/produtos.html">Produtos</a>
                 </li>
                 <li class="tablet-lista-menu__item">
-                  <a href="#contatos">Contatos</a>
+                  <a href="./pages/sobre-nos.html">Sobre-nós</a>
+                </li>
+                <li class="tablet-lista-menu__item">
+                  <a href="./pages/contato.html">Contatos</a>
                 </li>
               </ul>
             </div>
@@ -123,31 +129,37 @@
       </div>
     </nav>
     <header class="header">
-      <a href="#home" class="header__icon-logo"
+      <a href="./index.html" class="header__icon-logo"
         ><img
           src="./assets/images/icons/Logo-inteira.png"
           alt="Logo Flora Charme"
       /></a>
 
       <ul class="header__list">
-        <li><a href="#Produtos" class="header__link">Produtos</a></li>
-        <li><a href="#sobre-nos" class="header__link">Sobre-nós</a></li>
-        <li><a href="#contatos" class="header__link">Contatos</a></li>
+        <li>
+          <a href="./pages/produtos.html" class="header__link">Produtos</a>
+        </li>
+        <li>
+          <a href="./pages/sobre-nos.html" class="header__link">Sobre-nós</a>
+        </li>
+        <li>
+          <a href="./pages/contato.html" class="header__link">Contatos</a>
+        </li>
       </ul>
 
       <ul class="header__list-icon">
         <li>
-          <a href="#carrinho" class="header__icons"
+          <a href="./pages/carrinho.html" class="header__icons"
             ><img src="./assets/images/icons/Carrinho.png" alt="Carrinho"
           /></a>
         </li>
         <li>
-          <a href="#favoritos" class="header__icons"
+          <a href="./pages/favoritos.html" class="header__icons"
             ><img src="./assets/images/icons/Coracao.png" alt="Favoritos"
           /></a>
         </li>
         <li>
-          <a href="#carrinho" class="header__icons"
+          <a href="./pages/favoritos.html" class="header__icons"
             ><img src="./assets/images/icons/Perfil.png" alt="Perfil"
           /></a>
         </li>
@@ -527,15 +539,27 @@
         <div class="rodape__lista-container">
           <ol class="rodape__lista">
             <li class="rodape__lista-titulo">Contato</li>
-            <li class="rodape__lista-item"><a href="#">Linkedin</a></li>
-            <li class="rodape__lista-item"><a href="#">Github</a></li>
+            <li class="rodape__lista-item">
+              <a href="https://www.linkedin.com/in/luiza-ferreira-a41458281/"
+                >Linkedin</a
+              >
+            </li>
+            <li class="rodape__lista-item">
+              <a href="https://github.com/LuhOli42">Github</a>
+            </li>
           </ol>
           <ol class="rodape__lista">
             <li class="rodape__lista-titulo">Paginas</li>
-            <li class="rodape__lista-item"><a href="#">Home</a></li>
-            <li class="rodape__lista-item"><a href="#">Sobre-nós</a></li>
-            <li class="rodape__lista-item"><a href="#">Produtos</a></li>
-            <li class="rodape__lista-item"><a href="#">Contato</a></li>
+            <li class="rodape__lista-item"><a href="./index.html">Home</a></li>
+            <li class="rodape__lista-item">
+              <a href="./pages/sobre-nos.html">Sobre-nós</a>
+            </li>
+            <li class="rodape__lista-item">
+              <a href="./pages/favoritos.html">Produtos</a>
+            </li>
+            <li class="rodape__lista-item">
+              <a href="./pages/contato.html">Contato</a>
+            </li>
           </ol>
         </div>
       </div>
