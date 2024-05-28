@@ -1,0 +1,13 @@
+@import url("./main.css");
+@import url("./lancamentos.css");
+@import url("./sobre-nos.css");
+@import url("./produtos.css");
+@import url("./clientes.css");
+
+.mobile-lista-menu__item:first-child a {
+  color: var(--fc-color-brand-950);
+}
+
+.tablet-lista-menu__item:first-child a {
+  color: var(--fc-color-brand-950);
+}

@@ -14,6 +14,7 @@
     />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./styles/home/home.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -26,355 +27,515 @@
     <script src="./script.js" defer></script>
   </head>
   <body>
-    <header class="cabecalho">
-      <div class="container">
-        <h1 class="cabecalho__titulo">
-          Flora <span class="cabecalho__titulo-cor">Charme</span> &#9753;
-        </h1>
-        <h2 class="cabecalho__titulo-abreviado">
-          Flor<span class="cabecalho__titulo-cor"> Char</span> &#9753;
-        </h2>
+    <nav class="mobile__nav-bar">
+      <div class="mobile__nav-bar-smartphone">
+        <div class="container__mobile-nav">
+          <a href="#carrinho" class="mobile__icons"
+            ><img src="./assets/images/icons/Carrinho.png" alt="Carrinho"
+          /></a>
+          <a href="#favoritos" class="mobile__icons"
+            ><img src="./assets/images/icons/Coracao.png" alt="Favoritos"
+          /></a>
+          <a href="#perfil" class="mobile__icons"
+            ><img src="./assets/images/icons/Perfil.png" alt="Perfil"
+          /></a>
+          <div class="container__mobile-menu-hamburguer">
+            <input
+              type="checkbox"
+              id="mobile-menu-hamburguer"
+              class="mobile-menu-hamburguer__botao"
+            />
+            <label for="mobile-menu-hamburguer" class="mobile__icons">
+              <img
+                src="./assets/images/icons/Menu-hambuguer.png"
+                alt="Menu"
+                class="tablet__menu-hamburguer"
+              />
+            </label>
+            <ul class="mobile-lista-menu">
+              <li class="mobile-lista-menu__item"><a href="#">Home</a></li>
+              <li class="mobile-lista-menu__item"><a href="#">Produtos</a></li>
+              <li class="mobile-lista-menu__item">
+                <a href="#lancamentos">Sobre-nós</a>
+              </li>
+              <li class="mobile-lista-menu__item">
+                <a href="#contatos">Contatos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <div class="container">
-        <ul class="cabecalho__menu">
-          <li>
-            <a href="#lancamentos" class="cabecalho__menu-link">Lançamentos</a>
-          </li>
-          <li>
-            <a href="#sobre-nos" class="cabecalho__menu-link">Sobre-nós</a>
-          </li>
-          <li><a href="#produtos" class="cabecalho__menu-link">Produtos</a></li>
-          <li>
-            <a href="#clientes" class="cabecalho__menu-link">Nossos Clientes</a>
-          </li>
-          <li><a href="#contatos" class="cabecalho__menu-link">Contatos</a></li>
-        </ul>
+      <div class="mobile__nav-bar-tablet">
+        <div class="tablet__header">
+          <a href="#home"
+            ><img
+              src="./assets/images/icons/Logo-inteira.png"
+              alt="Logo Flora Charme"
+              class="tablet__logo-icon"
+          /></a>
+          <div class="container__tablet">
+            <a href="#perfil"
+              ><img
+                src="./assets/images/icons/Perfil.png"
+                alt="Perfil"
+                class="tablet__perfil-icon"
+            /></a>
+            <div class="container__tablet-menu-hamburguer">
+              <input
+                type="checkbox"
+                id="tablet-menu-hamburguer"
+                class="tablet-menu-hamburguer__botao"
+              />
+              <label for="tablet-menu-hamburguer" class="tablet__icons">
+                <img
+                  src="./assets/images/icons/Menu-hambuguer.png"
+                  alt="Menu"
+                  class="tablet__menu-hamburguer"
+                />
+              </label>
+              <ul class="tablet-lista-menu">
+                <li class="tablet-lista-menu__item"><a href="#">Home</a></li>
+                <li class="tablet-lista-menu__item">
+                  <a href="#">Produtos</a>
+                </li>
+                <li class="tablet-lista-menu__item">
+                  <a href="#lancamentos">Sobre-nós</a>
+                </li>
+                <li class="tablet-lista-menu__item">
+                  <a href="#contatos">Contatos</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="tablet__btns">
+          <button class="tablet__btn">
+            <a href="#carrinho"
+              ><img src="./assets/images/icons/Carrinho.png" alt="Carrinho"
+            /></a>
+          </button>
+          <button class="tablet__btn">
+            <a href="#favoritos"
+              ><img src="./assets/images/icons/Coracao.png" alt="Favoritos"
+            /></a>
+          </button>
+        </div>
       </div>
-      <div class="container">
-        <a href="#"
-          ><img
-            src="./assets/images/header/carrinho-de-compras.png"
-            alt="Carrinho de Compras"
-        /></a>
-        <a href="#"
-          ><img src="./assets/images/header/heart.png" alt="Favoritos"
-        /></a>
-        <a href="#"
-          ><img src="./assets/images/header/utilizador.png" alt="Usuário"
-        /></a>
-      </div>
-      <div class="container">
-        <input type="checkbox" id="menu-pesquisa" class="pesquisa__botao" />
-        <label for="menu-pesquisa">
-          <span class="cabecalho__pesquisa"></span>
-        </label>
-        <input
-          type="search"
-          placeholder="Qual produto você procura?"
-          id="barra-de-pesquisa"
-        />
-      </div>
-      <div class="container">
-        <input
-          type="checkbox"
-          id="menu-hamburguer"
-          class="menu-hamburguer__botao"
-        />
-        <label for="menu-hamburguer">
-          <span class="cabecalho__menu-hamburguer"></span>
-        </label>
-        <ul class="lista-menu">
-          <li class="lista-menu__titulo">Menu</li>
-          <li class="lista-menu__item"><a href="#">Home</a></li>
-          <li class="lista-menu__item">
-            <a href="#lancamentos">Lançamentos</a>
-          </li>
-          <li class="lista-menu__item"><a href="#sobre-nos">Sobre-nós</a></li>
-          <li class="lista-menu__item"><a href="#produtos">Produtos</a></li>
-          <li class="lista-menu__item">
-            <a href="#clientes">Nossos clientes</a>
-          </li>
-          <li class="lista-menu__item"><a href="#contatos">Contatos</a></li>
-        </ul>
-      </div>
+    </nav>
+    <header class="header">
+      <a href="#home" class="header__icon-logo"
+        ><img
+          src="./assets/images/icons/Logo-inteira.png"
+          alt="Logo Flora Charme"
+      /></a>
+
+      <ul class="header__list">
+        <li><a href="#Produtos" class="header__link">Produtos</a></li>
+        <li><a href="#sobre-nos" class="header__link">Sobre-nós</a></li>
+        <li><a href="#contatos" class="header__link">Contatos</a></li>
+      </ul>
+
+      <ul class="header__list-icon">
+        <li>
+          <a href="#carrinho" class="header__icons"
+            ><img src="./assets/images/icons/Carrinho.png" alt="Carrinho"
+          /></a>
+        </li>
+        <li>
+          <a href="#favoritos" class="header__icons"
+            ><img src="./assets/images/icons/Coracao.png" alt="Favoritos"
+          /></a>
+        </li>
+        <li>
+          <a href="#carrinho" class="header__icons"
+            ><img src="./assets/images/icons/Perfil.png" alt="Perfil"
+          /></a>
+        </li>
+      </ul>
     </header>
-    <section class="lancamentos" id="lancamentos">
-      <div class="lancamentos__titulo-container">
-        <h2 class="lancamentos__titulo">
-          <span class="lancamentos__titulo-bolinha">&#9679;</span>Lançamentos
-        </h2>
-        <p class="lancamentos__titulo-ano">2024</p>
-      </div>
+    <main class="main">
+      <img
+        src="./assets/images/icons/Logo-inteira.png"
+        alt="Logo Flora Charme"
+        class="main-logo"
+      />
+      <section class="lancamentos" id="lancamentos">
+        <h2 class="lancamentos__titulo">• Lançamentos</h2>
 
-      <div class="lancamentos__container">
-        <p class="lancamentos__produto">Base com protetor solar</p>
-        <hr />
-        <p class="lancamentos__preco">
-          R$: <b class="lancamentos__preco-hilight">55,00</b>
-        </p>
-      </div>
-      <div class="lancamentos__container-imagem">
-        <img
-          src="./assets/images/produtos/ines-bahr-sgxhA2BcJCQ-unsplash.jpg"
-          alt="Tubo rosado de Base"
-          class="lancamentos__imagem"
-        />
-      </div>
-    </section>
-    <hr class="section__hr" />
-    <section class="sobre-nos" id="sobre-nos">
-      <div class="sobre-nos__container">
-        <h2 class="sobre-nos__titulo">
-          <span class="sobre-nos__titulo-bolinha">&#9679;</span>Sobre-nós
-        </h2>
-        <h3 class="sobre-nos__subtitulo">
-          Florescendo
-          <span class="sobre-nos__subtitulo-highlight">Beleza</span> Sustentável
-        </h3>
-        <div class="sobre-nos__container-imagem">
+        <div class="lancamentos__container">
+          <p class="lancamentos__produto">Base com protetor solar</p>
+          <hr />
+          <p class="lancamentos__preco">
+            R$: <b class="lancamentos__preco-hilight">55,00</b>
+          </p>
+          <p class="lancamentos__titulo-ano">2024</p>
+        </div>
+
+        <div class="lancamentos__container-imagem">
           <img
-            src="./assets/images/produtos/brooke-lark-hp3MgIy-uEI-unsplash.jpg"
-            alt="Buque de flores feito com comésticos da marca"
-            class="sobre-nos__imagem"
+            src="./assets/images/produtos/ines-bahr-sgxhA2BcJCQ-unsplash.jpg"
+            alt="Tubo rosado de Base"
+            class="lancamentos__imagem"
           />
+          <ul class="lancamentos__btns">
+            <li>
+              <button class="lancamentos__btn lancamentos__btn-secundario">
+                <a href="saiba-mais"
+                  ><img src="./assets/images/icons/+.png" alt="Saiba mais"
+                /></a>
+              </button>
+            </li>
+            <li>
+              <button class="lancamentos__btn lancamentos__btn-secundario">
+                <a href="favoritos"
+                  ><img src="./assets/images/icons/Coracao.png" alt="Favoritos"
+                /></a>
+              </button>
+            </li>
+            <li>
+              <button class="lancamentos__btn">
+                <a href="carrinho"
+                  ><img
+                    src="./assets/images/icons/Carrinho.png"
+                    alt="Carrinho"
+                    class="lancamentos__btn-carrinho"
+                /></a>
+              </button>
+            </li>
+          </ul>
         </div>
-      </div>
-      <div class="sobre-nos__container">
-        <p class="sobre-nos__texto">
-          Em um mundo onde a beleza se entrelaça com a consciência ambiental,
-          nasce Flora Charme, mais do que uma marca de cosméticos, uma promessa
-          de sustentabilidade e cuidado com a natureza. <br />
-          Nossa jornada começa nos exuberantes campos floridos, onde a
-          inspiração floresce em cada pétala. Com um compromisso inabalável com
-          a preservação do meio ambiente, cada ingrediente é cuidadosamente
-          selecionado, cultivado de forma ética e colhido com respeito à
-          biodiversidade.
-        </p>
-        <button class="sobre-nos__botao-leia-mais">
-          <a href="#">Leia mais</a>
-        </button>
-      </div>
-    </section>
-    <hr class="section__hr" />
-    <section class="produtos" id="produtos">
-      <h2 class="produtos__titulo">
-        <span class="produtos__titulo-bolinha">&#9679;</span>Produtos
-      </h2>
-      <div class="produtos__container">
-        <a href="#" class="produtos__link">
-          <div class="produtos__container-produto">
-            <img
-              src="./assets/images/produtos/agenlaku-indonesia-FoUETBpb6mY-unsplash.jpg"
-              alt="Creme para pele"
-              class="produtos__imagem"
-            />
-            <div class="produtos__container-preco">
-              <p class="produtos__preco">Preço</p>
-              <p class="produtos__valor">R$ 34,90</p>
-            </div>
-            <hr class="produtos__linha" />
-            <h3 class="produtos__nome">Creme para pele</h3>
-          </div>
-        </a>
-        <a href="#" class="produtos__link">
-          <div class="produtos__container-produto">
-            <img
-              src="./assets/images/produtos/andyone-lgODpII88DE-unsplash.jpg"
-              alt="Batom"
-              class="produtos__imagem"
-            />
-            <div class="produtos__container-preco">
-              <p class="produtos__preco">Preço</p>
-              <p class="produtos__valor">R$ 9,90</p>
-            </div>
-            <hr class="produtos__linha" />
-            <h3 class="produtos__nome">Batom</h3>
-          </div></a
-        >
-        <a href="#" class="produtos__link">
-          <div class="produtos__container-produto">
-            <img
-              src="./assets/images/produtos/edz-norton-Qxr2KdrMh5w-unsplash.jpg"
-              alt="Kit sombrancelha e base em pó"
-              class="produtos__imagem"
-            />
-            <div class="produtos__container-preco">
-              <p class="produtos__preco">Preço</p>
-              <p class="produtos__valor">R$ 70,90</p>
-            </div>
-            <hr class="produtos__linha" />
-            <h3 class="produtos__nome">Kit sombrancelha e base em pó</h3>
-          </div>
-        </a>
-        <a href="#" class="produtos__link">
-          <div class="produtos__container-produto">
-            <img
-              src="./assets/images/produtos/laura-chouette-CA5TJWtWzA8-unsplash.jpg"
-              alt="Kit de Sombras Roxas"
-              class="produtos__imagem"
-            />
-            <div class="produtos__container-preco">
-              <p class="produtos__preco">Preço</p>
-              <p class="produtos__valor">R$ 14,90</p>
-            </div>
-            <hr class="produtos__linha" />
-            <h3 class="produtos__nome">Kit de Sombras Roxas</h3>
-          </div>
-        </a>
-        <a href="#" class="produtos__link">
-          <div class="produtos__container-produto">
-            <img
-              src="./assets/images/produtos/evangeline-sarney-NnsqpLjiA94-unsplash.jpg"
-              alt="Baton rosa claro"
-              class="produtos__imagem"
-            />
-            <div class="produtos__container-preco">
-              <p class="produtos__preco">Preço</p>
-              <p class="produtos__valor">R$ 15,90</p>
-            </div>
-            <hr class="produtos__linha" />
-            <h3 class="produtos__nome">Batom rosa claro</h3>
-          </div>
-        </a>
-        <a href="#" class="produtos__link">
-          <div class="produtos__container-produto">
-            <img
-              src="./assets/images/produtos/ines-bahr-sgxhA2BcJCQ-unsplash.jpg"
-              alt="Base clara suave"
-              class="produtos__imagem"
-            />
-            <div class="produtos__container-preco">
-              <p class="produtos__preco">Preço</p>
-              <p class="produtos__valor">R$ 20,90</p>
-            </div>
-            <hr class="produtos__linha" />
-            <h3 class="produtos__nome">Base clara suave</h3>
-          </div>
-        </a>
-      </div>
-    </section>
-    <hr class="section__hr" />
-    <section class="clientes" id="clientes">
-      <h2 class="clientes__titulo">
-        <span class="clientes__titulo-bolinha">&#9679;</span>Nossos Clientes
-      </h2>
-      <!-- Slider main container -->
-      <div class="swiper">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-          <!-- Slides -->
-          <div class="swiper-slide">
-            <div class="clientes__card">
-              <div class="clientes__card-texto-container">
-                <div class="clientes__card-container-estrelas">
-                  <p class="clientes__card-estrelas">
-                    &#9733; &#9733; &#9733; &#9733; &#9733;
-                  </p>
-                  <p class="clientes__card-produto-nome">Creme para pele</p>
-                </div>
+        <hr class="section__hr" />
+      </section>
 
-                <h3 class="clientes__card-nome">Luiza Ferreira</h3>
-                <p class="clientes__card-avaliacao">
-                  Produto suave, cheiroso e espalha bem na pele. Alta qualidade,
-                  embalagem sustentável.
-                </p>
-              </div>
-              <div class="clientes__card-imagem-container">
-                <img
-                  src="./assets/images/clientes/luiza_ferreira.jpeg"
-                  alt="Imagem da Luiza"
-                  class="clientes__card-imagem"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="clientes__card">
-              <div class="clientes__card-texto-container">
-                <div class="clientes__card-container-estrelas">
-                  <p class="clientes__card-estrelas">
-                    &#9733; &#9733; &#9733; &#9733; &#9733;
-                  </p>
-                  <p class="clientes__card-produto-nome">Perfume capivara</p>
-                </div>
-
-                <h3 class="clientes__card-nome">Lua Silva</h3>
-                <p class="clientes__card-avaliacao">
-                  Produto suave e cheiroso. Alta qualidade, embalagem fofinha.
-                </p>
-              </div>
-              <div class="clientes__card-imagem-container">
-                <img
-                  src="./assets/images/clientes/cliente3.jpeg"
-                  alt="Imagem da Luiza"
-                  class="clientes__card-imagem"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="clientes__card">
-              <div class="clientes__card-texto-container">
-                <div class="clientes__card-container-estrelas">
-                  <p class="clientes__card-estrelas">
-                    &#9733; &#9733; &#9733; &#9733; &#9733;
-                  </p>
-                  <p class="clientes__card-produto-nome">Base neutra</p>
-                </div>
-
-                <h3 class="clientes__card-nome">Maria Aparecida</h3>
-                <p class="clientes__card-avaliacao">
-                  Produto suave, cheiroso e espalha bem na pele. Alta qualidade,
-                  embalagem sustentável.
-                </p>
-              </div>
-              <div class="clientes__card-imagem-container">
-                <img
-                  src="./assets/images/clientes/cliente2.jpeg"
-                  alt="Imagem da Luiza"
-                  class="clientes__card-imagem"
-                />
-              </div>
-            </div>
+      <section class="sobre-nos" id="sobre-nos">
+        <div class="sobre-nos__container">
+          <h2 class="sobre-nos__titulo">• Sobre-nós</h2>
+          <h3 class="sobre-nos__subtitulo">
+            Florescendo
+            <span class="sobre-nos__subtitulo-highlight">Beleza</span>
+            Sustentável
+          </h3>
+          <div class="sobre-nos__container-imagem">
+            <img
+              src="./assets/images/produtos/brooke-lark-hp3MgIy-uEI-unsplash.jpg"
+              alt="Buque de flores feito com comésticos da marca"
+              class="sobre-nos__imagem"
+            />
           </div>
         </div>
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
-      </div>
-    </section>
+        <div class="sobre-nos__container">
+          <p class="sobre-nos__texto">
+            Em um mundo onde a beleza se entrelaça com a consciência ambiental,
+            nasce Flora Charme, mais do que uma marca de cosméticos, uma
+            promessa de sustentabilidade e cuidado com a natureza. <br />
+            Nossa jornada começa nos exuberantes campos floridos, onde a
+            inspiração floresce em cada pétala. Com um compromisso inabalável
+            com a preservação do meio ambiente, cada ingrediente é
+            cuidadosamente selecionado, cultivado de forma ética e colhido com
+            respeito à biodiversidade.
+          </p>
+          <button class="sobre-nos__botao-leia-mais">
+            <a href="#">Leia mais</a>
+          </button>
+        </div>
+        <hr class="section__hr" />
+      </section>
+
+      <section class="produtos" id="produtos">
+        <h2 class="produtos__titulo">• Produtos</h2>
+        <ol class="produtos__lista">
+          <li class="produtos__card">
+            <div class="produtos__card-container">
+              <h3 class="produto__titulo">Limons Hand's</h3>
+              <p class="produto__descricao">Creme de mão com cheiro de limão</p>
+              <p class="produto__preco">R$ 10.00</p>
+            </div>
+            <div class="produtos__card-container">
+              <div class="produtos__imagem-container">
+                <img
+                  src="./assets/images/produtos/agenlaku-indonesia-FoUETBpb6mY-unsplash.jpg"
+                  alt="Creme de mão limons hand's"
+                />
+              </div>
+              <ul class="produtos__btns">
+                <li>
+                  <button class="produtos__btn produtos__btn-secundario">
+                    <a href="saiba-mais"
+                      ><img src="./assets/images/icons/+.png" alt="Saiba mais"
+                    /></a>
+                  </button>
+                </li>
+                <li>
+                  <button class="produtos__btn produtos__btn-secundario">
+                    <a href="favoritos"
+                      ><img
+                        src="./assets/images/icons/Coracao.png"
+                        alt="Favoritos"
+                    /></a>
+                  </button>
+                </li>
+                <li>
+                  <button class="produtos__btn">
+                    <a href="carrinho"
+                      ><img
+                        src="./assets/images/icons/Carrinho.png"
+                        alt="Carrinho"
+                        class="produtos__btn-carrinho"
+                    /></a>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="produtos__card">
+            <div class="produtos__card-container">
+              <h3 class="produto__titulo">Limons Hand's</h3>
+              <p class="produto__descricao">Creme de mão com cheiro de limão</p>
+              <p class="produto__preco">R$ 10.00</p>
+            </div>
+            <div class="produtos__card-container">
+              <div class="produtos__imagem-container">
+                <img
+                  src="./assets/images/produtos/agenlaku-indonesia-FoUETBpb6mY-unsplash.jpg"
+                  alt="Creme de mão limons hand's"
+                />
+              </div>
+              <ul class="produtos__btns">
+                <li>
+                  <button class="produtos__btn produtos__btn-secundario">
+                    <a href="saiba-mais"
+                      ><img src="./assets/images/icons/+.png" alt="Saiba mais"
+                    /></a>
+                  </button>
+                </li>
+                <li>
+                  <button class="produtos__btn produtos__btn-secundario">
+                    <a href="favoritos"
+                      ><img
+                        src="./assets/images/icons/Coracao.png"
+                        alt="Favoritos"
+                    /></a>
+                  </button>
+                </li>
+                <li>
+                  <button class="produtos__btn">
+                    <a href="carrinho"
+                      ><img
+                        src="./assets/images/icons/Carrinho.png"
+                        alt="Carrinho"
+                        class="produtos__btn-carrinho"
+                    /></a>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="produtos__card">
+            <div class="produtos__card-container">
+              <h3 class="produto__titulo">Limons Hand's</h3>
+              <p class="produto__descricao">Creme de mão com cheiro de limão</p>
+              <p class="produto__preco">R$ 10.00</p>
+            </div>
+            <div class="produtos__card-container">
+              <div class="produtos__imagem-container">
+                <img
+                  src="./assets/images/produtos/agenlaku-indonesia-FoUETBpb6mY-unsplash.jpg"
+                  alt="Creme de mão limons hand's"
+                />
+              </div>
+              <ul class="produtos__btns">
+                <li>
+                  <button class="produtos__btn produtos__btn-secundario">
+                    <a href="saiba-mais"
+                      ><img src="./assets/images/icons/+.png" alt="Saiba mais"
+                    /></a>
+                  </button>
+                </li>
+                <li>
+                  <button class="produtos__btn produtos__btn-secundario">
+                    <a href="favoritos"
+                      ><img
+                        src="./assets/images/icons/Coracao.png"
+                        alt="Favoritos"
+                    /></a>
+                  </button>
+                </li>
+                <li>
+                  <button class="produtos__btn">
+                    <a href="carrinho"
+                      ><img
+                        src="./assets/images/icons/Carrinho.png"
+                        alt="Carrinho"
+                        class="produtos__btn-carrinho"
+                    /></a>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="produtos__card">
+            <div class="produtos__card-container">
+              <h3 class="produto__titulo">Limons Hand's</h3>
+              <p class="produto__descricao">Creme de mão com cheiro de limão</p>
+              <p class="produto__preco">R$ 10.00</p>
+            </div>
+            <div class="produtos__card-container">
+              <div class="produtos__imagem-container">
+                <img
+                  src="./assets/images/produtos/agenlaku-indonesia-FoUETBpb6mY-unsplash.jpg"
+                  alt="Creme de mão limons hand's"
+                />
+              </div>
+              <ul class="produtos__btns">
+                <li>
+                  <button class="produtos__btn produtos__btn-secundario">
+                    <a href="saiba-mais"
+                      ><img src="./assets/images/icons/+.png" alt="Saiba mais"
+                    /></a>
+                  </button>
+                </li>
+                <li>
+                  <button class="produtos__btn produtos__btn-secundario">
+                    <a href="favoritos"
+                      ><img
+                        src="./assets/images/icons/Coracao.png"
+                        alt="Favoritos"
+                    /></a>
+                  </button>
+                </li>
+                <li>
+                  <button class="produtos__btn">
+                    <a href="carrinho"
+                      ><img
+                        src="./assets/images/icons/Carrinho.png"
+                        alt="Carrinho"
+                        class="produtos__btn-carrinho"
+                    /></a>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+
+        <hr class="section__hr" />
+      </section>
+
+      <section class="clientes" id="clientes">
+        <h2 class="clientes__titulo">
+          <span class="clientes__titulo-bolinha">&#9679;</span>Nossos Clientes
+        </h2>
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="clientes__card">
+                <div class="clientes__card-texto-container">
+                  <div class="clientes__card-container-estrelas">
+                    <p class="clientes__card-estrelas">
+                      &#9733; &#9733; &#9733; &#9733; &#9733;
+                    </p>
+                    <p class="clientes__card-produto-nome">Creme para pele</p>
+                  </div>
+
+                  <h3 class="clientes__card-nome">Luiza Ferreira</h3>
+                  <p class="clientes__card-avaliacao">
+                    Produto suave, cheiroso e espalha bem na pele. Alta
+                    qualidade, embalagem sustentável.
+                  </p>
+                </div>
+                <div class="clientes__card-imagem-container">
+                  <img
+                    src="./assets/images/clientes/luiza_ferreira.jpeg"
+                    alt="Imagem da Luiza"
+                    class="clientes__card-imagem"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="clientes__card">
+                <div class="clientes__card-texto-container">
+                  <div class="clientes__card-container-estrelas">
+                    <p class="clientes__card-estrelas">
+                      &#9733; &#9733; &#9733; &#9733; &#9733;
+                    </p>
+                    <p class="clientes__card-produto-nome">Perfume capivara</p>
+                  </div>
+
+                  <h3 class="clientes__card-nome">Lua Silva</h3>
+                  <p class="clientes__card-avaliacao">
+                    Produto suave e cheiroso. Alta qualidade, embalagem fofinha.
+                  </p>
+                </div>
+                <div class="clientes__card-imagem-container">
+                  <img
+                    src="./assets/images/clientes/cliente3.jpeg"
+                    alt="Imagem da Luiza"
+                    class="clientes__card-imagem"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="clientes__card">
+                <div class="clientes__card-texto-container">
+                  <div class="clientes__card-container-estrelas">
+                    <p class="clientes__card-estrelas">
+                      &#9733; &#9733; &#9733; &#9733; &#9733;
+                    </p>
+                    <p class="clientes__card-produto-nome">Base neutra</p>
+                  </div>
+
+                  <h3 class="clientes__card-nome">Maria Aparecida</h3>
+                  <p class="clientes__card-avaliacao">
+                    Produto suave, cheiroso e espalha bem na pele. Alta
+                    qualidade, embalagem sustentável.
+                  </p>
+                </div>
+                <div class="clientes__card-imagem-container">
+                  <img
+                    src="./assets/images/clientes/cliente2.jpeg"
+                    alt="Imagem da Luiza"
+                    class="clientes__card-imagem"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+    </main>
     <footer class="rodape" id="contatos">
       <div class="rodape__container">
         <h2 class="rodape__logo">
-          Flora <span class="rodape-logo-cor">Charme</span> &#9753;
+          <img
+            src="./assets/images/icons/Logo-inteira.png"
+            alt="Logo flora charme"
+          />
         </h2>
         <p class="rodape__paragrafo">
           Esse projeto foi desenvolvido pela Luiza Ferreira como parte do
           projeto do grupo desenvolve da Boticário.
-          <br />Cujo conteúdo trabalhado Mobile-first, HTML e CSS.
         </p>
       </div>
       <div class="rodape__container">
-        <h3 class="rodape__titulo">
-          <span class="rodape__titulo-bolinha">&#9679;</span> Fique por dentro
-          das novidades
-        </h3>
-        <input
-          type="search"
-          placeholder="Cadestre seu email"
-          class="rodape__cadastre-email"
-        />
         <div class="rodape__lista-container">
           <ol class="rodape__lista">
-            <li class="rodape__lista-titulo">Redes sociais</li>
+            <li class="rodape__lista-titulo">Contato</li>
             <li class="rodape__lista-item"><a href="#">Linkedin</a></li>
             <li class="rodape__lista-item"><a href="#">Github</a></li>
           </ol>
           <ol class="rodape__lista">
             <li class="rodape__lista-titulo">Paginas</li>
-            <li class="rodape__lista-item"><a href="#">Lançamentos</a></li>
+            <li class="rodape__lista-item"><a href="#">Home</a></li>
             <li class="rodape__lista-item"><a href="#">Sobre-nós</a></li>
             <li class="rodape__lista-item"><a href="#">Produtos</a></li>
-            <li class="rodape__lista-item"><a href="#">Nossos clientes</a></li>
+            <li class="rodape__lista-item"><a href="#">Contato</a></li>
           </ol>
         </div>
       </div>
