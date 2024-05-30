@@ -160,6 +160,11 @@
     hue-rotate(292deg) brightness(98%) contrast(92%);
 }
 
+.produto__id,
+.produto__categoria {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   .produtos {
     padding-top: 40px;

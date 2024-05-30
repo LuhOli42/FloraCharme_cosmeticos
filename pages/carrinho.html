@@ -24,7 +24,7 @@
       src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
       defer
     ></script>
-    <script src="./script.js" defer></script>
+    <script type="module" src="../js/carrinhoProdutos.js"></script>
   </head>
   <body>
     <nav class="mobile__nav-bar">
@@ -168,63 +168,31 @@
       <section class="carrinho">
         <h2 class="carrinho__titulo">• Carrinho</h2>
 
-        <ol class="carrinho__lista">
-          <li class="carrinho__lista-descricoes">
-            <div class="carrinho__lista-produto">Produto</div>
-            <div class="carrinho__lista-preco">Preço</div>
-          </li>
-
-          <li class="carrinho__lista-produtos">
-            <h3 class="carrinho__lista-produto-nome">Lemon's Hand</h3>
-            <div class="carrinho__lista-container">
-              <img
-                src="../assets/images/icons/Lixeira.png"
-                alt="Deletar item"
-              />
-              <p class="carrinho__lista-produto-preço">R$ 10.00</p>
-            </div>
-          </li>
-
-          <li class="carrinho__lista-produtos">
-            <h3 class="carrinho__lista-produto-nome">Lemon's Hand</h3>
-            <div class="carrinho__lista-container">
-              <img
-                src="../assets/images/icons/Lixeira.png"
-                alt="Deletar item"
-              />
-              <p class="carrinho__lista-produto-preço">R$ 10.00</p>
-            </div>
-          </li>
-
-          <li class="carrinho__lista-produtos">
-            <h3 class="carrinho__lista-produto-nome">Lemon's Hand</h3>
-            <div class="carrinho__lista-container">
-              <img
-                src="../assets/images/icons/Lixeira.png"
-                alt="Deletar item"
-              />
-              <p class="carrinho__lista-produto-preço">R$ 10.00</p>
-            </div>
-          </li>
-
-          <li class="carrinho__lista-produtos">
-            <h3 class="carrinho__lista-produto-nome">Lemon's Hand</h3>
-            <div class="carrinho__lista-container">
-              <img
-                src="../assets/images/icons/Lixeira.png"
-                alt="Deletar item"
-              />
-              <p class="carrinho__lista-produto-preço">R$ 10.00</p>
-            </div>
-          </li>
-
+        <div class="carrinho__vazio">
+          <h3 class="carrinho__vazio-subtitulo">Seu carrinho está vazio</h3>
+          <p class="carrinho__vazio-texto">
+            Vá para a página de <a href="./produtos.html">produtos</a> e
+            adicione alguns produtos
+          </p>
+        </div>
+        <div class="carrinho__formulario disable">
           <ol class="carrinho__lista">
             <li class="carrinho__lista-descricoes">
-              <div class="carrinho__lista-produto">Valor-total:</div>
-              <div class="carrinho__lista-preco">R$ 40.00</div>
+              <div class="carrinho__lista-produto">Produto</div>
+              <div class="carrinho__lista-quantidade">Quantidade</div>
+              <div class="carrinho__lista-preco">Preço</div>
             </li>
-        </ol>
-        <button class="carrinho__btn-submit">Comprar</button>
+            <div class="append__list"></div>
+
+            <li class="carrinho__lista-descricoes">
+              <div class="carrinho__lista-produto">Valor-total:</div>
+              <div class="carrinho__lista-preco">
+                R$ <span class="valor-total"></span>
+              </div>
+            </li>
+          </ol>
+          <button class="carrinho__btn-submit">Comprar</button>
+        </div>
       </section>
     </main>
     <footer class="rodape" id="contatos">

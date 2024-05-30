@@ -15,16 +15,11 @@
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="./styles/pages/home.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
-      defer
-    ></script>
-    <script src="./script.js" defer></script>
+    <script src="./js/script.js" type="modules" defer></script>
+    <script type="module" src="./js/btnsLancamento.js"></script>
+    <script type="module" src="./js/btnsCarrinho.js"></script>
+    <script type="module" src="./js/btnsFavoritos.js" defer></script>
   </head>
   <body>
     <nav class="mobile__nav-bar">
@@ -116,12 +111,12 @@
         </div>
         <div class="tablet__btns">
           <button class="tablet__btn">
-            <a href="#carrinho"
+            <a href="./pages/carrinho.html"
               ><img src="./assets/images/icons/Carrinho.png" alt="Carrinho"
             /></a>
           </button>
           <button class="tablet__btn">
-            <a href="#favoritos"
+            <a href="./pages/favoritos.html"
               ><img src="./assets/images/icons/Coracao.png" alt="Favoritos"
             /></a>
           </button>
@@ -175,12 +170,13 @@
         <h2 class="lancamentos__titulo">• Lançamentos</h2>
 
         <div class="lancamentos__container">
-          <p class="lancamentos__produto">Base com protetor solar</p>
+          <p class="lancamentos__id">1</p>
+          <p class="lancamentos__produto">Base-solar high clarity</p>
+          <p class="lancamento__descricao">Base com protetor solar</p>
           <hr />
-          <p class="lancamentos__preco">
-            R$: <b class="lancamentos__preco-hilight">55,00</b>
-          </p>
+          <p class="lancamentos__preco">R$: 55.00</p>
           <p class="lancamentos__titulo-ano">2024</p>
+          <p class="lancamentos__categoria">Bases</p>
         </div>
 
         <div class="lancamentos__container-imagem">
@@ -198,20 +194,19 @@
               </button>
             </li>
             <li>
-              <button class="lancamentos__btn lancamentos__btn-secundario">
-                <a href="favoritos"
-                  ><img src="./assets/images/icons/Coracao.png" alt="Favoritos"
-                /></a>
+              <button
+                class="lancamentos__btn lancamentos__btn-secundario lancamentos__btn-fav"
+              >
+                <img src="./assets/images/icons/Coracao.png" alt="Favoritos" />
               </button>
             </li>
             <li>
-              <button class="lancamentos__btn">
-                <a href="carrinho"
-                  ><img
-                    src="./assets/images/icons/Carrinho.png"
-                    alt="Carrinho"
-                    class="lancamentos__btn-carrinho"
-                /></a>
+              <button class="lancamentos__btn lancamento__btn-carrinho">
+                <img
+                  src="./assets/images/icons/Carrinho.png"
+                  alt="Carrinho"
+                  class="lancamentos__btn-carrinho"
+                />
               </button>
             </li>
           </ul>
@@ -257,16 +252,19 @@
         <h2 class="produtos__titulo">• Produtos</h2>
         <ol class="produtos__lista">
           <li class="produtos__card">
-            <div class="produtos__card-container">
+            <div class="produtos__card-container app__produto-descricao">
+              <p class="produto__id">2</p>
               <h3 class="produto__titulo">Limons Hand's</h3>
               <p class="produto__descricao">Creme de mão com cheiro de limão</p>
               <p class="produto__preco">R$ 10.00</p>
+              <p class="produto__categoria">Cremes</p>
             </div>
             <div class="produtos__card-container">
               <div class="produtos__imagem-container">
                 <img
                   src="./assets/images/produtos/agenlaku-indonesia-FoUETBpb6mY-unsplash.jpg"
                   alt="Creme de mão limons hand's"
+                  class="app__produto-img"
                 />
               </div>
               <ul class="produtos__btns">
@@ -278,38 +276,41 @@
                   </button>
                 </li>
                 <li>
-                  <button class="produtos__btn produtos__btn-secundario">
-                    <a href="favoritos"
-                      ><img
-                        src="./assets/images/icons/Coracao.png"
-                        alt="Favoritos"
-                    /></a>
+                  <button
+                    class="produtos__btn produtos__btn-secundario app__produto-favorito"
+                  >
+                    <img
+                      src="./assets/images/icons/Coracao.png"
+                      alt="Favoritos"
+                    />
                   </button>
                 </li>
                 <li>
-                  <button class="produtos__btn">
-                    <a href="carrinho"
-                      ><img
-                        src="./assets/images/icons/Carrinho.png"
-                        alt="Carrinho"
-                        class="produtos__btn-carrinho"
-                    /></a>
+                  <button class="produtos__btn app__produto-carrinho">
+                    <img
+                      src="./assets/images/icons/Carrinho.png"
+                      alt="Carrinho"
+                      class="produtos__btn-carrinho"
+                    />
                   </button>
                 </li>
               </ul>
             </div>
           </li>
           <li class="produtos__card">
-            <div class="produtos__card-container">
-              <h3 class="produto__titulo">Limons Hand's</h3>
-              <p class="produto__descricao">Creme de mão com cheiro de limão</p>
-              <p class="produto__preco">R$ 10.00</p>
+            <div class="produtos__card-container app__produto-descricao">
+              <p class="produto__id">3</p>
+              <h3 class="produto__titulo">Red batoons</h3>
+              <p class="produto__descricao">Batom vermelhor forte</p>
+              <p class="produto__preco">R$ 8.00</p>
+              <p class="produto__categoria">Batom</p>
             </div>
             <div class="produtos__card-container">
               <div class="produtos__imagem-container">
                 <img
-                  src="./assets/images/produtos/agenlaku-indonesia-FoUETBpb6mY-unsplash.jpg"
+                  src="./assets/images/produtos/andyone-lgODpII88DE-unsplash.jpg"
                   alt="Creme de mão limons hand's"
+                  class="app__produto-img"
                 />
               </div>
               <ul class="produtos__btns">
@@ -321,38 +322,41 @@
                   </button>
                 </li>
                 <li>
-                  <button class="produtos__btn produtos__btn-secundario">
-                    <a href="favoritos"
-                      ><img
-                        src="./assets/images/icons/Coracao.png"
-                        alt="Favoritos"
-                    /></a>
+                  <button
+                    class="produtos__btn produtos__btn-secundario app__produto-favorito"
+                  >
+                    <img
+                      src="./assets/images/icons/Coracao.png"
+                      alt="Favoritos"
+                    />
                   </button>
                 </li>
                 <li>
-                  <button class="produtos__btn">
-                    <a href="carrinho"
-                      ><img
-                        src="./assets/images/icons/Carrinho.png"
-                        alt="Carrinho"
-                        class="produtos__btn-carrinho"
-                    /></a>
+                  <button class="produtos__btn app__produto-carrinho">
+                    <img
+                      src="./assets/images/icons/Carrinho.png"
+                      alt="Carrinho"
+                      class="produtos__btn-carrinho"
+                    />
                   </button>
                 </li>
               </ul>
             </div>
           </li>
           <li class="produtos__card">
-            <div class="produtos__card-container">
-              <h3 class="produto__titulo">Limons Hand's</h3>
-              <p class="produto__descricao">Creme de mão com cheiro de limão</p>
-              <p class="produto__preco">R$ 10.00</p>
+            <div class="produtos__card-container app__produto-descricao">
+              <p class="produto__id">4</p>
+              <h3 class="produto__titulo">Darks Shadows</h3>
+              <p class="produto__descricao">Sombras escuras</p>
+              <p class="produto__preco">R$ 63.00</p>
+              <p class="produto__categoria">Sombras</p>
             </div>
             <div class="produtos__card-container">
               <div class="produtos__imagem-container">
                 <img
-                  src="./assets/images/produtos/agenlaku-indonesia-FoUETBpb6mY-unsplash.jpg"
+                  src="./assets/images/produtos/laura-chouette-CA5TJWtWzA8-unsplash.jpg"
                   alt="Creme de mão limons hand's"
+                  class="app__produto-img"
                 />
               </div>
               <ul class="produtos__btns">
@@ -364,38 +368,43 @@
                   </button>
                 </li>
                 <li>
-                  <button class="produtos__btn produtos__btn-secundario">
-                    <a href="favoritos"
-                      ><img
-                        src="./assets/images/icons/Coracao.png"
-                        alt="Favoritos"
-                    /></a>
+                  <button
+                    class="produtos__btn produtos__btn-secundario app__produto-favorito"
+                  >
+                    <img
+                      src="./assets/images/icons/Coracao.png"
+                      alt="Favoritos"
+                    />
                   </button>
                 </li>
                 <li>
-                  <button class="produtos__btn">
-                    <a href="carrinho"
-                      ><img
-                        src="./assets/images/icons/Carrinho.png"
-                        alt="Carrinho"
-                        class="produtos__btn-carrinho"
-                    /></a>
+                  <button class="produtos__btn app__produto-carrinho">
+                    <img
+                      src="./assets/images/icons/Carrinho.png"
+                      alt="Carrinho"
+                      class="produtos__btn-carrinho"
+                    />
                   </button>
                 </li>
               </ul>
             </div>
           </li>
           <li class="produtos__card">
-            <div class="produtos__card-container">
-              <h3 class="produto__titulo">Limons Hand's</h3>
-              <p class="produto__descricao">Creme de mão com cheiro de limão</p>
-              <p class="produto__preco">R$ 10.00</p>
+            <div class="produtos__card-container app__produto-descricao">
+              <p class="produto__id">5</p>
+              <h3 class="produto__titulo">Maryl batom</h3>
+              <p class="produto__descricao">
+                Batom baseados em uma artista famosa
+              </p>
+              <p class="produto__preco">R$ 39.00</p>
+              <p class="produto__categoria">Batom</p>
             </div>
             <div class="produtos__card-container">
               <div class="produtos__imagem-container">
                 <img
-                  src="./assets/images/produtos/agenlaku-indonesia-FoUETBpb6mY-unsplash.jpg"
+                  src="./assets/images/produtos/marek-studzinski-mzstXkKH8DI-unsplash.jpg"
                   alt="Creme de mão limons hand's"
+                  class="app__produto-img"
                 />
               </div>
               <ul class="produtos__btns">
@@ -407,22 +416,22 @@
                   </button>
                 </li>
                 <li>
-                  <button class="produtos__btn produtos__btn-secundario">
-                    <a href="favoritos"
-                      ><img
-                        src="./assets/images/icons/Coracao.png"
-                        alt="Favoritos"
-                    /></a>
+                  <button
+                    class="produtos__btn produtos__btn-secundario app__produto-favorito"
+                  >
+                    <img
+                      src="./assets/images/icons/Coracao.png"
+                      alt="Favoritos"
+                    />
                   </button>
                 </li>
                 <li>
-                  <button class="produtos__btn">
-                    <a href="carrinho"
-                      ><img
-                        src="./assets/images/icons/Carrinho.png"
-                        alt="Carrinho"
-                        class="produtos__btn-carrinho"
-                    /></a>
+                  <button class="produtos__btn app__produto-carrinho">
+                    <img
+                      src="./assets/images/icons/Carrinho.png"
+                      alt="Carrinho"
+                      class="produtos__btn-carrinho"
+                    />
                   </button>
                 </li>
               </ul>

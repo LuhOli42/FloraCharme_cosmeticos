@@ -24,7 +24,7 @@
       src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
       defer
     ></script>
-    <script src="./script.js" defer></script>
+    <script type="module" src="../js/favoritosProduto.js"></script>
   </head>
   <body>
     <nav class="mobile__nav-bar">
@@ -168,276 +168,29 @@
       <section class="favoritos">
         <h2 class="favoritos__titulo">• Favoritos</h2>
 
-        <div class="produtos__filtro-container">
-          <h3 class="produtos__subtitulo">Filtrar:</h3>
-          <button class="filtros_btn filtros_btn-precos">Preços</button>
-          <button class="filtros_btn filtros_btn-bases">Bases</button>
-          <button class="filtros_btn filtros_btn-perfumes">Perfumes</button>
-          <button class="filtros_btn filtros_btn-batom">Batom</button>
-          <button class="filtros_btn filtros_btn-Cremes">Cremes</button>
-          <button class="filtros_btn filtros_btn-todos">Todos</button>
+        <div class="favoritos__vazio">
+          <h3 class="favoritos__vazio-subtitulo">
+            Sua lista de favoritos está vazia
+          </h3>
+          <p class="favoritos__vazio-texto">
+            Vá para a página de <a href="./produtos.html">produtos</a> e
+            favorite alguns produtos
+          </p>
         </div>
 
-        <ol class="produtos__lista">
-          <li class="produtos__card">
-            <div class="produtos__card-container">
-              <h3 class="produto__titulo">Limons Hand's</h3>
-              <p class="produto__descricao">Creme de mão com cheiro de limão</p>
-              <p class="produto__preco">R$ 10.00</p>
-            </div>
-            <div class="produtos__card-container">
-              <div class="produtos__imagem-container">
-                <img
-                  src="../assets/images/produtos/agenlaku-indonesia-FoUETBpb6mY-unsplash.jpg"
-                  alt="Creme de mão limons hand's"
-                />
-              </div>
-              <ul class="produtos__btns">
-                <li>
-                  <button class="produtos__btn produtos__btn-secundario">
-                    <a href="saiba-mais"
-                      ><img src="../assets/images/icons/+.png" alt="Saiba mais"
-                    /></a>
-                  </button>
-                </li>
-                <li>
-                  <button class="produtos__btn produtos__btn-secundario">
-                    <a href="favoritos"
-                      ><img
-                        src="../assets/images/icons/Lixeira.png"
-                        alt="Deletar"
-                    /></a>
-                  </button>
-                </li>
-                <li>
-                  <button class="produtos__btn">
-                    <a href="carrinho"
-                      ><img
-                        src="../assets/images/icons/Carrinho.png"
-                        alt="Carrinho"
-                        class="produtos__btn-carrinho"
-                    /></a>
-                  </button>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="produtos__card">
-            <div class="produtos__card-container">
-              <h3 class="produto__titulo">Limons Hand's</h3>
-              <p class="produto__descricao">Creme de mão com cheiro de limão</p>
-              <p class="produto__preco">R$ 10.00</p>
-            </div>
-            <div class="produtos__card-container">
-              <div class="produtos__imagem-container">
-                <img
-                  src="../assets/images/produtos/agenlaku-indonesia-FoUETBpb6mY-unsplash.jpg"
-                  alt="Creme de mão limons hand's"
-                />
-              </div>
-              <ul class="produtos__btns">
-                <li>
-                  <button class="produtos__btn produtos__btn-secundario">
-                    <a href="saiba-mais"
-                      ><img src="../assets/images/icons/+.png" alt="Saiba mais"
-                    /></a>
-                  </button>
-                </li>
-                <li>
-                  <button class="produtos__btn produtos__btn-secundario">
-                    <a href="favoritos"
-                      ><img
-                        src="../assets/images/icons/Lixeira.png"
-                        alt="Deletar"
-                    /></a>
-                  </button>
-                </li>
-                <li>
-                  <button class="produtos__btn">
-                    <a href="carrinho"
-                      ><img
-                        src="../assets/images/icons/Carrinho.png"
-                        alt="Carrinho"
-                        class="produtos__btn-carrinho"
-                    /></a>
-                  </button>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="produtos__card">
-            <div class="produtos__card-container">
-              <h3 class="produto__titulo">Limons Hand's</h3>
-              <p class="produto__descricao">Creme de mão com cheiro de limão</p>
-              <p class="produto__preco">R$ 10.00</p>
-            </div>
-            <div class="produtos__card-container">
-              <div class="produtos__imagem-container">
-                <img
-                  src="../assets/images/produtos/agenlaku-indonesia-FoUETBpb6mY-unsplash.jpg"
-                  alt="Creme de mão limons hand's"
-                />
-              </div>
-              <ul class="produtos__btns">
-                <li>
-                  <button class="produtos__btn produtos__btn-secundario">
-                    <a href="saiba-mais"
-                      ><img src="../assets/images/icons/+.png" alt="Saiba mais"
-                    /></a>
-                  </button>
-                </li>
-                <li>
-                  <button class="produtos__btn produtos__btn-secundario">
-                    <a href="favoritos"
-                      ><img
-                        src="../assets/images/icons/Lixeira.png"
-                        alt="Deletar"
-                    /></a>
-                  </button>
-                </li>
-                <li>
-                  <button class="produtos__btn">
-                    <a href="carrinho"
-                      ><img
-                        src="../assets/images/icons/Carrinho.png"
-                        alt="Carrinho"
-                        class="produtos__btn-carrinho"
-                    /></a>
-                  </button>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="produtos__card">
-            <div class="produtos__card-container">
-              <h3 class="produto__titulo">Limons Hand's</h3>
-              <p class="produto__descricao">Creme de mão com cheiro de limão</p>
-              <p class="produto__preco">R$ 10.00</p>
-            </div>
-            <div class="produtos__card-container">
-              <div class="produtos__imagem-container">
-                <img
-                  src="../assets/images/produtos/agenlaku-indonesia-FoUETBpb6mY-unsplash.jpg"
-                  alt="Creme de mão limons hand's"
-                />
-              </div>
-              <ul class="produtos__btns">
-                <li>
-                  <button class="produtos__btn produtos__btn-secundario">
-                    <a href="saiba-mais"
-                      ><img src="../assets/images/icons/+.png" alt="Saiba mais"
-                    /></a>
-                  </button>
-                </li>
-                <li>
-                  <button class="produtos__btn produtos__btn-secundario">
-                    <a href="favoritos"
-                      ><img
-                        src="../assets/images/icons/Lixeira.png"
-                        alt="Deletar"
-                    /></a>
-                  </button>
-                </li>
-                <li>
-                  <button class="produtos__btn">
-                    <a href="carrinho"
-                      ><img
-                        src="../assets/images/icons/Carrinho.png"
-                        alt="Carrinho"
-                        class="produtos__btn-carrinho"
-                    /></a>
-                  </button>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="produtos__card">
-            <div class="produtos__card-container">
-              <h3 class="produto__titulo">Limons Hand's</h3>
-              <p class="produto__descricao">Creme de mão com cheiro de limão</p>
-              <p class="produto__preco">R$ 10.00</p>
-            </div>
-            <div class="produtos__card-container">
-              <div class="produtos__imagem-container">
-                <img
-                  src="../assets/images/produtos/agenlaku-indonesia-FoUETBpb6mY-unsplash.jpg"
-                  alt="Creme de mão limons hand's"
-                />
-              </div>
-              <ul class="produtos__btns">
-                <li>
-                  <button class="produtos__btn produtos__btn-secundario">
-                    <a href="saiba-mais"
-                      ><img src="../assets/images/icons/+.png" alt="Saiba mais"
-                    /></a>
-                  </button>
-                </li>
-                <li>
-                  <button class="produtos__btn produtos__btn-secundario">
-                    <a href="favoritos"
-                      ><img
-                        src="../assets/images/icons/Lixeira.png"
-                        alt="Deletar"
-                    /></a>
-                  </button>
-                </li>
-                <li>
-                  <button class="produtos__btn">
-                    <a href="carrinho"
-                      ><img
-                        src="../assets/images/icons/Carrinho.png"
-                        alt="Carrinho"
-                        class="produtos__btn-carrinho"
-                    /></a>
-                  </button>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="produtos__card">
-            <div class="produtos__card-container">
-              <h3 class="produto__titulo">Limons Hand's</h3>
-              <p class="produto__descricao">Creme de mão com cheiro de limão</p>
-              <p class="produto__preco">R$ 10.00</p>
-            </div>
-            <div class="produtos__card-container">
-              <div class="produtos__imagem-container">
-                <img
-                  src="../assets/images/produtos/agenlaku-indonesia-FoUETBpb6mY-unsplash.jpg"
-                  alt="Creme de mão limons hand's"
-                />
-              </div>
-              <ul class="produtos__btns">
-                <li>
-                  <button class="produtos__btn produtos__btn-secundario">
-                    <a href="saiba-mais"
-                      ><img src="../assets/images/icons/+.png" alt="Saiba mais"
-                    /></a>
-                  </button>
-                </li>
-                <li>
-                  <button class="produtos__btn produtos__btn-secundario">
-                    <a href="favoritos"
-                      ><img
-                        src="../assets/images/icons/Lixeira.png"
-                        alt="Deletar"
-                    /></a>
-                  </button>
-                </li>
-                <li>
-                  <button class="produtos__btn">
-                    <a href="carrinho"
-                      ><img
-                        src="../assets/images/icons/Carrinho.png"
-                        alt="Carrinho"
-                        class="produtos__btn-carrinho"
-                    /></a>
-                  </button>
-                </li>
-              </ul>
-            </div>
-          </li>
-        </ol>
+        <div class="produtos__favoritos-main disable">
+          <div class="produtos__filtro-container">
+            <h3 class="produtos__subtitulo">Filtrar:</h3>
+            <button class="filtros_btn filtros_btn-precos">Preços</button>
+            <button class="filtros_btn filtros_btn-bases">Bases</button>
+            <button class="filtros_btn filtros_btn-perfumes">Perfumes</button>
+            <button class="filtros_btn filtros_btn-batom">Batom</button>
+            <button class="filtros_btn filtros_btn-Cremes">Cremes</button>
+            <button class="filtros_btn filtros_btn-todos">Todos</button>
+          </div>
+
+          <ol class="produtos__lista"></ol>
+        </div>
       </section>
     </main>
     <footer class="rodape" id="contatos">

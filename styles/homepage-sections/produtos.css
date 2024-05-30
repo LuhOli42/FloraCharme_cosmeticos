@@ -143,6 +143,11 @@
   }
 }
 
+.produto__id,
+.produto__categoria {
+  display: none;
+}
+
 @media screen and (min-width: 1440px) {
   .produtos {
     padding-top: 64px;
