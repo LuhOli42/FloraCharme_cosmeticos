@@ -32,7 +32,9 @@
 }
 
 .cadastro__foto-background {
-  padding: 32px 42px;
+  width: 160px;
+  height: 120px;
+  /* object-fit: cover; */
   border-radius: 104px;
   background-color: var(--fc-color-brand-300);
 }
@@ -103,6 +105,10 @@
 }
 .cadastro__btn-submit:focus {
   background-color: var(--fc-color-brand-950);
+}
+
+.disable {
+  display: none;
 }
 
 @media screen and (min-width: 768px) {

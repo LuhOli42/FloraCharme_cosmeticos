@@ -20,11 +20,7 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
-      defer
-    ></script>
-    <script src="./script.js" defer></script>
+    <script type="module" src="../js/login.js" defer></script>
   </head>
   <body>
     <nav class="mobile__nav-bar">
@@ -169,20 +165,28 @@
 
       <section class="login">
         <h2 class="login__titulo">• Login</h2>
+        <p class="paragrafo__erro disable">
+          Usuario ou senha invalidos, ou tente cadastrar um novo suario
+        </p>
         <div class="login__container">
           <div class="login__cabecario">
             <h3 class="login__cabecario-titulo">Email</h3>
-            <input type="text" class="login__cabecario-input" />
+            <input type="text" class="login__cabecario-input" id="email" />
           </div>
           <div class="login__cabecario">
             <h3 class="login__cabecario-titulo">Senha</h3>
-            <input type="text" class="login__cabecario-input" />
+            <input
+              type="text"
+              class="login__cabecario-input"
+              id="senha"
+              type="password"
+            />
           </div>
           <div class="login__btns">
             <button class="login__btn login__btn-secundario">
               <a href="./cadastro.html">Cadastre-se</a>
             </button>
-            <button class="login__btn" type="submit">Login</button>
+            <button class="login__btn login__btn-login">Login</button>
           </div>
         </div>
       </section>

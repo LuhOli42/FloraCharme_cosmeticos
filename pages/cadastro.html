@@ -15,16 +15,8 @@
     <link rel="stylesheet" href="../reset.css" />
     <link rel="stylesheet" href="../styles.css" />
     <link rel="stylesheet" href="../styles/pages/cadastro.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
-      defer
-    ></script>
-    <script src="./script.js" defer></script>
+    <script type="module" src="../js/formsCadastro.js" defer></script>
   </head>
   <body>
     <nav class="mobile__nav-bar">
@@ -171,41 +163,93 @@
         <div class="cadastro__container">
           <div class="cadastro__input-foto">
             <div class="cadastro__foto">
-              <span class="cadastro__foto-background"></span>
+              <video
+                src=""
+                autoplay
+                class="cadastro__foto-background cadastro__camera"
+              ></video>
+              <canvas
+                class="cadastro__foto-background cadastro__canvas disable"
+              ></canvas>
             </div>
-            <button class="cadastro__foto-btn">Tirar foto</button>
+            <button class="cadastro__foto-btn cadastro__abrir-camera">
+              Abrir camera
+            </button>
+            <button class="cadastro__foto-btn cadastro__tirar-foto disable">
+              Tirar foto
+            </button>
           </div>
-          <div class="cadastro__input-texto">
+          <form class="cadastro__input-texto" data-formulario>
             <div class="cadastro__container-cabecario-input">
-              <h3 class="cadastro__cabecario-titulo">Nome</h3>
-              <input type="text" class="cadastro__cabecario-input" />
+              <h3 class="cadastro__cabecario-titulo" for="nome">Nome</h3>
+              <input
+                name="nome"
+                id="nome"
+                type="text"
+                class="cadastro__cabecario-input"
+                minlength="3"
+                required
+                id="nome"
+              />
             </div>
             <div class="cadastro__container-cabecario-input">
               <h3 class="cadastro__cabecario-titulo">Email</h3>
-              <input type="text" class="cadastro__cabecario-input" />
+              <input
+                class="cadastro__cabecario-input"
+                type="email"
+                minlength="4"
+                id="email"
+              />
             </div>
             <div class="cadastro__container-cabecario-input">
               <h3 class="cadastro__cabecario-titulo">Senha</h3>
-              <input type="text" class="cadastro__cabecario-input" />
+              <input
+                class="cadastro__cabecario-input"
+                type="password"
+                minlength="4"
+                required
+                id="senha"
+              />
             </div>
             <div class="cadastro__container-cabecario-input">
               <h3 class="cadastro__cabecario-titulo">Telefone</h3>
-              <input type="text" class="cadastro__cabecario-input" />
+              <input
+                type="number"
+                class="cadastro__cabecario-input"
+                minlength="9"
+                minlength="12"
+                id="telefone"
+              />
             </div>
             <div class="cadastro__container-cabecario-input">
               <h3 class="cadastro__cabecario-titulo">CEP</h3>
-              <input type="text" class="cadastro__cabecario-input" />
+              <input
+                type="number"
+                class="cadastro__cabecario-input"
+                minlength="8"
+                maxlength="8"
+                id="cep"
+              />
             </div>
             <div class="cadastro__container-cabecario-input">
               <h3 class="cadastro__cabecario-titulo">Endereço</h3>
-              <input type="text" class="cadastro__cabecario-input" />
+              <input
+                type="text"
+                class="cadastro__cabecario-input"
+                minlength="3"
+                id="endereco"
+              />
             </div>
             <div class="cadastro__container-cabecario-input">
               <h3 class="cadastro__cabecario-titulo">Complemento</h3>
-              <input type="text" class="cadastro__cabecario-input" />
+              <input
+                type="text"
+                class="cadastro__cabecario-input"
+                id="complemento"
+              />
             </div>
             <button class="cadastro__btn-submit" type="submit">Enviar</button>
-          </div>
+          </form>
         </div>
       </section>
     </main>
