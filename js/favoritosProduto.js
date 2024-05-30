@@ -36,10 +36,10 @@ function criarElementoFavorito(elemento) {
   </div>
   <ul class="produtos__btns">
     <li>
-      <button class="produtos__btn produtos__btn-secundario">
-        <a href="saiba-mais"
-          ><img src="../assets/images/icons/+.png" alt="Saiba mais"
-        /></a>
+      <button class="produtos__btn produtos__btn-secundario app__produto-saiba-mais">
+
+          <img src="../assets/images/icons/+.png" alt="Saiba mais"
+        />
       </button>
     </li>
     <li>

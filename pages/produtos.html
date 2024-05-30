@@ -24,6 +24,8 @@
     <script type="module" src="../js/btnsCarrinho.js" defer></script>
     <script type="module" src="../js/btnsFavoritos.js" defer></script>
     <script type="module" src="../js/btnPopVoltar.js" defer></script>
+    <script type="module" src="../js/btnMaisInfos.js" defer></script>
+    <script type="module" src="../js/btnFiltros.js" defer></script>
   </head>
   <body>
     <nav class="mobile__nav-bar">
@@ -186,7 +188,6 @@
 
         <div class="produtos__filtro-container">
           <h3 class="produtos__subtitulo">Filtrar:</h3>
-          <button class="filtros_btn filtros_btn-precos">Preços</button>
           <button class="filtros_btn filtros_btn-bases">Bases</button>
           <button class="filtros_btn filtros_btn-perfumes">Perfumes</button>
           <button class="filtros_btn filtros_btn-batom">Batom</button>
@@ -197,26 +198,26 @@
         <ol class="produtos__lista">
           <li class="produtos__card">
             <div class="produtos__card-container app__produto-descricao">
-              <p class="produto__id">2</p>
-              <h3 class="produto__titulo">Limons Hand's</h3>
-              <p class="produto__descricao">Creme de mão com cheiro de limão</p>
-              <p class="produto__preco">R$ 10.00</p>
-              <p class="produto__categoria">Cremes</p>
+              <p class="produto__id">1</p>
+              <h3 class="produto__titulo">Base-solar high</h3>
+              <p class="produto__descricao">Base com protetor solar</p>
+              <p class="produto__preco">R$: 55.00</p>
+              <p class="produto__categoria">Bases</p>
             </div>
             <div class="produtos__card-container">
               <div class="produtos__imagem-container">
                 <img
-                  src="../assets/images/produtos/agenlaku-indonesia-FoUETBpb6mY-unsplash.jpg"
+                  src="../assets/images/produtos/ines-bahr-sgxhA2BcJCQ-unsplash.jpg"
                   alt="Creme de mão limons hand's"
                   class="app__produto-img"
                 />
               </div>
               <ul class="produtos__btns">
                 <li>
-                  <button class="produtos__btn produtos__btn-secundario">
-                    <a href="saiba-mais"
-                      ><img src="../assets/images/icons/+.png" alt="Saiba mais"
-                    /></a>
+                  <button
+                    class="produtos__btn produtos__btn-secundario app__produto-saiba-mais"
+                  >
+                    <img src="../assets/images/icons/+.png" alt="Saiba mais" />
                   </button>
                 </li>
                 <li>
@@ -241,6 +242,54 @@
               </ul>
             </div>
           </li>
+
+          <li class="produtos__card">
+            <div class="produtos__card-container app__produto-descricao">
+              <p class="produto__id">2</p>
+              <h3 class="produto__titulo">Limons Hand's</h3>
+              <p class="produto__descricao">Creme de mão com cheiro de limão</p>
+              <p class="produto__preco">R$ 10.00</p>
+              <p class="produto__categoria">Cremes</p>
+            </div>
+            <div class="produtos__card-container">
+              <div class="produtos__imagem-container">
+                <img
+                  src="../assets/images/produtos/agenlaku-indonesia-FoUETBpb6mY-unsplash.jpg"
+                  alt="Creme de mão limons hand's"
+                  class="app__produto-img"
+                />
+              </div>
+              <ul class="produtos__btns">
+                <li>
+                  <button
+                    class="produtos__btn produtos__btn-secundario app__produto-saiba-mais"
+                  >
+                    <img src="../assets/images/icons/+.png" alt="Saiba mais" />
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="produtos__btn produtos__btn-secundario app__produto-favorito"
+                  >
+                    <img
+                      src="../assets/images/icons/Coracao.png"
+                      alt="Favoritos"
+                    />
+                  </button>
+                </li>
+                <li>
+                  <button class="produtos__btn app__produto-carrinho">
+                    <img
+                      src="../assets/images/icons/Carrinho.png"
+                      alt="Carrinho"
+                      class="produtos__btn-carrinho"
+                    />
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </li>
+
           <li class="produtos__card">
             <div class="produtos__card-container app__produto-descricao">
               <p class="produto__id">3</p>
@@ -259,10 +308,10 @@
               </div>
               <ul class="produtos__btns">
                 <li>
-                  <button class="produtos__btn produtos__btn-secundario">
-                    <a href="saiba-mais"
-                      ><img src="../assets/images/icons/+.png" alt="Saiba mais"
-                    /></a>
+                  <button
+                    class="produtos__btn produtos__btn-secundario app__produto-saiba-mais"
+                  >
+                    <img src="../assets/images/icons/+.png" alt="Saiba mais" />
                   </button>
                 </li>
                 <li>
@@ -305,10 +354,10 @@
               </div>
               <ul class="produtos__btns">
                 <li>
-                  <button class="produtos__btn produtos__btn-secundario">
-                    <a href="saiba-mais"
-                      ><img src="../assets/images/icons/+.png" alt="Saiba mais"
-                    /></a>
+                  <button
+                    class="produtos__btn produtos__btn-secundario app__produto-saiba-mais"
+                  >
+                    <img src="../assets/images/icons/+.png" alt="Saiba mais" />
                   </button>
                 </li>
                 <li>
@@ -353,10 +402,10 @@
               </div>
               <ul class="produtos__btns">
                 <li>
-                  <button class="produtos__btn produtos__btn-secundario">
-                    <a href="saiba-mais"
-                      ><img src="../assets/images/icons/+.png" alt="Saiba mais"
-                    /></a>
+                  <button
+                    class="produtos__btn produtos__btn-secundario app__produto-saiba-mais"
+                  >
+                    <img src="../assets/images/icons/+.png" alt="Saiba mais" />
                   </button>
                 </li>
                 <li>

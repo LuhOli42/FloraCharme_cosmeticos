@@ -9,6 +9,7 @@ const btnCarrinhoLancamentos = document.querySelector(
   ".lancamento__btn-carrinho"
 );
 const btnFavoritosLancamentos = document.querySelector(".lancamentos__btn-fav");
+const btnSaibaMais = document.querySelector(".lancamentos__btn-saiba-mais");
 const popFavorito = document.querySelector(".popup__favorito");
 const popCarrinho = document.querySelector(".popup__carrinho");
 

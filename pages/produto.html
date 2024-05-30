@@ -14,11 +14,17 @@
     />
     <link rel="stylesheet" href="../reset.css" />
     <link rel="stylesheet" href="../styles.css" />
-    <link rel="stylesheet" href="../styles/pages/sobre-nos.css" />
+    <link rel="stylesheet" href="../styles/pages/produto.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+
+    <script type="module" src="../js/btnsCarrinho.js" defer></script>
+    <script type="module" src="../js/btnsFavoritos.js" defer></script>
+    <script type="module" src="../js/btnMaisInfos.js" defer></script>
+    <script type="module" src="../js/btnPopVoltar.js" defer></script>
+    <script type="module" src="../js/produto.js" defer></script>
   </head>
   <body>
     <nav class="mobile__nav-bar">
@@ -161,55 +167,79 @@
           class="main-logo"
       /></a>
 
-      <section class="sobre-nos">
-        <h2 class="sobre-nos__titulo">• Sobre-nós</h2>
+      <section class="produto">
+        <div class="popup__favorito disable popup">
+          <h3 class="popup__titulo">
+            Item adicionado nos favoritos com sucesso
+          </h3>
+          <button class="popup__btn-voltar">Voltar</button>
+          <button class="popup__btn-redirecionar">
+            <a href="./favoritos.html">Favoritos</a>
+          </button>
+        </div>
+        <div class="popup__carrinho disable popup">
+          <h3 class="popup__titulo">Item adicionado no carrinho com sucesso</h3>
+          <button class="popup__btn-voltar">Voltar</button>
+          <button class="popup__btn-redirecionar">
+            <a href="./carrinho.html">Carrinho</a>
+          </button>
+        </div>
+        <div class="produtos__card-container app__produto-descricao">
+          <p class="produto__id">5</p>
+          <h3 class="produto__titulo">Maryl batom</h3>
+          <p class="produto__descricao">Batom baseados em uma artista famosa</p>
+          <p class="produto__preco">R$ 39.00</p>
+          <p class="produto__categoria">Batom</p>
+        </div>
 
-        <div class="sobre-nos__container">
-          <div class="sobre-nos__container-imagem">
+        <h2 class="produto__titulo">• Nome do produto</h2>
+
+        <div class="produto__container">
+          <div class="produto__container-imagem">
             <img
               src="../assets/images/produtos/brooke-lark-hp3MgIy-uEI-unsplash.jpg"
               alt="Buque de flores feito com comésticos da marca"
-              class="sobre-nos__imagem"
+              class="produto__imagem app__produto-img"
             />
           </div>
-          <div class="sobre-nos__texto-container">
-            <h3 class="sobre-nos__subtitulo">
-              Florescendo
-              <span class="sobre-nos__subtitulo-highlight">Beleza</span>
-              Sustentável
+
+          <div class="produto__texto-container">
+            <h3 class="produto__subtitulo">
+              <span class="produto__subtitulo-highlight">Categoria:</span>
+
+              <span class="produto__categoria">Sustentável</span>
             </h3>
 
-            <p class="sobre-nos__texto">
+            <p class="produto__texto produto__descricao">
               Em um mundo onde a beleza se entrelaça com a consciência
               ambiental, nasce Flora Charme, mais do que uma marca de
               cosméticos, uma promessa de sustentabilidade e cuidado com a
               natureza.
             </p>
-            <p class="sobre-nos__texto">
-              Nossa jornada começa nos exuberantes campos floridos, onde a
-              inspiração floresce em cada pétala. Com um compromisso inabalável
-              com a preservação do meio ambiente, cada ingrediente é
-              cuidadosamente selecionado, cultivado de forma ética e colhido com
-              respeito à biodiversidade.
-            </p>
-            <p class="sobre-nos__texto">
-              Em cada frasco de nossos produtos, você encontrará não apenas a
-              essência da natureza, mas também o compromisso com práticas
-              sustentáveis. Nossas embalagens são projetadas com materiais
-              recicláveis e biodegradáveis, minimizando nosso impacto no planeta
-              e incentivando um ciclo de vida mais verde.
-            </p>
-            <p class="sobre-nos__texto">
-              Além disso, estamos empenhados em apoiar comunidades locais,
-              promovendo o comércio justo e oferecendo oportunidades de
-              crescimento econômico sustentável.
-            </p>
-            <p class="sobre-nos__texto">
-              Na jornada para a beleza sustentável, cada passo conta. Com Flora
-              Charme, não apenas celebramos a sua beleza, mas também a beleza do
-              mundo ao nosso redor. Juntos, florescemos em harmonia com a
-              natureza, cultivando um futuro mais belo e sustentável para todos.
-            </p>
+
+            <div class="produto__container-btn-preco">
+              <p class="produto__preco">R$ 30.00</p>
+              <div class="produto__btns">
+                <button
+                  class="produtos__btn produtos__btn-secundario app__produto-favorito"
+                >
+                  <img
+                    src="../assets/images/icons/Coracao.png"
+                    alt="Favoritos"
+                  />
+                  <p class="produto__btn-texto">Favoritos</p>
+                </button>
+                <button class="produtos__btn app__produto-carrinho">
+                  <img
+                    src="../assets/images/icons/Carrinho.png"
+                    alt="Carrinho"
+                    class="produtos__btn-carrinho"
+                  />
+
+                  <p class="produto__btn-texto">Carrinho</p>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
