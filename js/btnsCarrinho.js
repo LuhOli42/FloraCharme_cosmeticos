@@ -1,5 +1,7 @@
-const lancamentoInfo = document.querySelector(".lancamentos__container");
+import acharProdutoLocalStorage from "./acharProdutoLocalStorage.js";
+
 const descricaoProdutos = document.querySelectorAll(".app__produto-descricao");
+const popCarrinho = document.querySelector(".popup__carrinho");
 
 const btnsCarrinhosProduto = document.querySelectorAll(
   ".app__produto-carrinho"
@@ -16,8 +18,16 @@ for (let i = 0; i < btnsCarrinhosProduto.length; i++) {
       quantidade: 1,
     };
 
-    carrinho.push(objProduto);
-    localStorage.removeItem("carrinho");
-    localStorage.setItem("carrinho", JSON.stringify(carrinho));
+    if (acharProdutoLocalStorage(objProduto, carrinho, "carrinho")) {
+      popCarrinho.children[0].innerHTML =
+        "Foi adicionado mais um do mesmo produto no carrinho";
+      popCarrinho.classList.remove("disable");
+    }
+    if (!acharProdutoLocalStorage(objProduto, carrinho, "carrinho")) {
+      popCarrinho.classList.remove("disable");
+      carrinho.push(objProduto);
+      localStorage.removeItem("carrinho");
+      localStorage.setItem("carrinho", JSON.stringify(carrinho));
+    }
   });
 }

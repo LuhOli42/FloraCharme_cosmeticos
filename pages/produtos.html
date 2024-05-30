@@ -15,17 +15,15 @@
     <link rel="stylesheet" href="../reset.css" />
     <link rel="stylesheet" href="../styles.css" />
     <link rel="stylesheet" href="../styles/pages/produtos.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
 
     <script
-      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+      type="module"
+      src="../js/acharProdutoLocalStorage.js"
       defer
     ></script>
-    <script src="../js/btnsCarrinho.js" defer></script>
-    <script type="module" src="../js/btnsFavoritos.js"></script>
+    <script type="module" src="../js/btnsCarrinho.js" defer></script>
+    <script type="module" src="../js/btnsFavoritos.js" defer></script>
+    <script type="module" src="../js/btnPopVoltar.js" defer></script>
   </head>
   <body>
     <nav class="mobile__nav-bar">
@@ -161,12 +159,29 @@
       </ul>
     </header>
     <main class="main">
-      <img
-        src="../assets/images/icons/Logo-inteira.png"
-        alt="Logo Flora Charme"
-        class="main-logo"
-      />
+      <a href="../index.html">
+        <img
+          src="../assets/images/icons/Logo-inteira.png"
+          alt="Logo Flora Charme"
+          class="main-logo"
+      /></a>
       <section class="produtos">
+        <div class="popup__favorito disable popup">
+          <h3 class="popup__titulo">
+            Item adicionado nos favoritos com sucesso
+          </h3>
+          <button class="popup__btn-voltar">Voltar</button>
+          <button class="popup__btn-redirecionar">
+            <a href="./favoritos.html">Favoritos</a>
+          </button>
+        </div>
+        <div class="popup__carrinho disable popup">
+          <h3 class="popup__titulo">Item adicionado no carrinho com sucesso</h3>
+          <button class="popup__btn-voltar">Voltar</button>
+          <button class="popup__btn-redirecionar">
+            <a href="./carrinho.html">Carrinho</a>
+          </button>
+        </div>
         <h2 class="produtos__titulo">• Produtos</h2>
 
         <div class="produtos__filtro-container">

@@ -15,7 +15,8 @@ if (carrinho.length > 0) {
 }
 
 for (let produto of carrinho) {
-  valorTotal += Number(produto.preco.split(" ")[1]);
+  valorTotal +=
+    Number(produto.preco.split(" ")[1]) * Number(produto.quantidade);
 }
 
 valorTotalTexto.innerHTML = valorTotal.toFixed(2);
@@ -45,9 +46,17 @@ const btnLixeira = document.querySelectorAll(".carrinho__lista-delete-btn");
 
 for (let i = 0; i < btnLixeira.length; i++) {
   btnLixeira[i].addEventListener("click", () => {
-    carrinho.splice(i, 1);
-    localStorage.removeItem("carrinho");
-    localStorage.setItem("carrinho", JSON.stringify(carrinho));
-    window.location.reload();
+    if (carrinho[i].quantidade === 1) {
+      carrinho.splice(i, 1);
+      localStorage.removeItem("carrinho");
+      localStorage.setItem("carrinho", JSON.stringify(carrinho));
+      window.location.reload();
+    }
+    if (carrinho[i].quantidade > 1) {
+      carrinho[i].quantidade--;
+      localStorage.removeItem("carrinho");
+      localStorage.setItem("carrinho", JSON.stringify(carrinho));
+      window.location.reload();
+    }
   });
 }

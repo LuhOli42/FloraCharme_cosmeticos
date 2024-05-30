@@ -24,7 +24,9 @@
       src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
       defer
     ></script>
-    <script type="module" src="../js/favoritosProduto.js"></script>
+    <script type="module" src="./js/acharProdutoLocalStorage.js" defer></script>
+    <script type="module" src="../js/favoritosProduto.js" defer></script>
+    <script type="module" src="./js/btnPopVoltar.js" defer></script>
   </head>
   <body>
     <nav class="mobile__nav-bar">
@@ -160,12 +162,21 @@
       </ul>
     </header>
     <main class="main">
-      <img
-        src="../assets/images/icons/Logo-inteira.png"
-        alt="Logo Flora Charme"
-        class="main-logo"
-      />
+      <a href="../index.html">
+        <img
+          src="../assets/images/icons/Logo-inteira.png"
+          alt="Logo Flora Charme"
+          class="main-logo"
+      /></a>
+
       <section class="favoritos">
+        <div class="popup__carrinho disable popup">
+          <h3 class="popup__titulo">Item adicionado no carrinho com sucesso</h3>
+          <button class="popup__btn-voltar">Voltar</button>
+          <button class="popup__btn-redirecionar">
+            <a href="./carrinho.html">Carrinho</a>
+          </button>
+        </div>
         <h2 class="favoritos__titulo">• Favoritos</h2>
 
         <div class="favoritos__vazio">

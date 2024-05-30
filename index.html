@@ -17,9 +17,11 @@
     <link rel="stylesheet" href="./styles/pages/home.css" />
 
     <script src="./js/script.js" type="modules" defer></script>
-    <script type="module" src="./js/btnsLancamento.js"></script>
-    <script type="module" src="./js/btnsCarrinho.js"></script>
+    <script type="module" src="./js/acharProdutoLocalStorage.js"></script>
+    <script type="module" src="./js/btnsLancamento.js" defer></script>
+    <script type="module" src="./js/btnsCarrinho.js" defer></script>
     <script type="module" src="./js/btnsFavoritos.js" defer></script>
+    <script type="module" src="./js/btnPopVoltar.js" defer></script>
   </head>
   <body>
     <nav class="mobile__nav-bar">
@@ -161,11 +163,27 @@
       </ul>
     </header>
     <main class="main">
-      <img
-        src="./assets/images/icons/Logo-inteira.png"
-        alt="Logo Flora Charme"
-        class="main-logo"
-      />
+      <a href="./index.html">
+        <img
+          src="./assets/images/icons/Logo-inteira.png"
+          alt="Logo Flora Charme"
+          class="main-logo"
+      /></a>
+
+      <div class="popup__favorito disable popup">
+        <h3 class="popup__titulo">Item adicionado nos favoritos com sucesso</h3>
+        <button class="popup__btn-voltar">Voltar</button>
+        <button class="popup__btn-redirecionar">
+          <a href="./pages/favoritos.html">Favoritos</a>
+        </button>
+      </div>
+      <div class="popup__carrinho disable popup">
+        <h3 class="popup__titulo">Item adicionado no carrinho com sucesso</h3>
+        <button class="popup__btn-voltar">Voltar</button>
+        <button class="popup__btn-redirecionar">
+          <a href="./pages/carrinho.html">Carrinho</a>
+        </button>
+      </div>
       <section class="lancamentos" id="lancamentos">
         <h2 class="lancamentos__titulo">• Lançamentos</h2>
 
