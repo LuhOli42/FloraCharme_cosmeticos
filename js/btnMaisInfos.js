@@ -17,6 +17,6 @@ for (let i = 0; i < btnMaisInfos.length; i++) {
     localStorage.removeItem("produtoEscolhido");
     localStorage.setItem("produtoEscolhido", JSON.stringify(objProduto));
 
-    window.location.href = "./produto.html";
+    window.location.href = "../pages/produto.html";
   });
 }

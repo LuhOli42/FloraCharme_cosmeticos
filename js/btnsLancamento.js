@@ -58,3 +58,19 @@ btnFavoritosLancamentos.addEventListener("click", () => {
     localStorage.setItem("favoritos", JSON.stringify(favoritos));
   }
 });
+
+btnSaibaMais.addEventListener("click", () => {
+  const objProduto = {
+    id: lancamentoInfo.children[0].innerHTML,
+    nome: lancamentoInfo.children[1].innerHTML,
+    descricao: lancamentoInfo.children[2].innerHTML,
+    preco: lancamentoInfo.children[4].innerHTML,
+    categoria: lancamentoInfo.children[6].innerHTML,
+    imagem: lancamentoImgUrl.children[0].src,
+  };
+
+  localStorage.removeItem("produtoEscolhido");
+  localStorage.setItem("produtoEscolhido", JSON.stringify(objProduto));
+
+  window.location.href = "../pages/produto.html";
+});
