@@ -261,7 +261,9 @@
   color: var(--fc-color-brand-950);
 }
 
-.disable {
+.disable,
+.produto__categoria,
+.produto__id {
   display: none;
 }
 

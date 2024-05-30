@@ -18,51 +18,51 @@ function criarElementoFavorito(elemento) {
   const li = document.createElement("li");
   li.classList.add("produtos__card");
 
-  li.innerHTML = `              <div class="produtos__card-container">
+  li.innerHTML = `
+<div class="produtos__card-container app__produto-descricao">
+  <p class="produto__id">${elemento.id}</p>
   <h3 class="produto__titulo">${elemento.nome}</h3>
-  <p class="produto__descricao">
-    ${elemento.descricao}
-  </p>
+  <p class="produto__descricao">${elemento.descricao}</p>
   <p class="produto__preco">${elemento.preco}</p>
+  <p class="produto__categoria">${elemento.categoria}</p>
 </div>
 <div class="produtos__card-container">
   <div class="produtos__imagem-container">
     <img
       src="../assets${elemento.imagem.split("assets")[1]}"
       alt="Creme de mão limons hand's"
+      class="app__produto-img"
     />
   </div>
   <ul class="produtos__btns">
     <li>
       <button class="produtos__btn produtos__btn-secundario">
         <a href="saiba-mais"
-          ><img
-            src="../assets/images/icons/+.png"
-            alt="Saiba mais"
+          ><img src="../assets/images/icons/+.png" alt="Saiba mais"
         /></a>
       </button>
     </li>
     <li>
-      <button class="produtos__btn produtos__btn-secundario favoritos__lista-delete-btn">
+    <button class="produtos__btn produtos__btn-secundario favoritos__lista-delete-btn">
 
-          <img
-            src="../assets/images/icons/Lixeira.png"
-            alt="Deletar"
-   </a>
-      </button>
+    <img
+      src="../assets/images/icons/Lixeira.png"
+      alt="Deletar"
+
+</button>
     </li>
     <li>
-      <button class="produtos__btn">
-        <a href="carrinho"
-          ><img
-            src="../assets/images/icons/Carrinho.png"
-            alt="Carrinho"
-            class="produtos__btn-carrinho"
-        /></a>
+      <button class="produtos__btn app__produto-carrinho">
+        <img
+          src="../assets/images/icons/Carrinho.png"
+          alt="Carrinho"
+          class="produtos__btn-carrinho"
+        />
       </button>
     </li>
   </ul>
-</div>`;
+</div>
+`;
 
   return li;
 }
