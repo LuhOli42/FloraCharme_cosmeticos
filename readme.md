@@ -24,9 +24,12 @@ Acompanhe o trello do projeto [trello](https://trello.com/b/iNi0Bn3N/flora-charm
 - Redesign do site usando conceitos de design system. 
 
 ## Primeira entrega
+`Possivel acessar através da branch primeira-entrega`
 
 - Paginas de Cadastro, perfil, produto individual, produtos, sobre-nos, favoritos, carrinho, cadastro e login.
 - Telas disponíveis para dispositivos para smartphone até 1024px, tablets de 1024px até 1440px e desktop acima de 1440px.
+
+
 ## Link de Acesso
 
 [Site de acesso](https://flora-charme-cosmeticos.vercel.app/)
