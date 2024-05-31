@@ -1,6 +1,8 @@
 <p align="center"><b>Flora Charme - Projeto Front-end</b></p>
 
+<p align="center">
 <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExNjlpYzN5cHZvenZvcjhseW5qeTQ0eWVwcWpjbHJpd2htZXU3anRtayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/iQqp6rEZxvTZjkhkaI/giphy.gif" alt="Site-imagem" />
+</p>
 
 ## About
 
