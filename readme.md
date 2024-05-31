@@ -1,6 +1,6 @@
 <p align="center"><b>Flora Charme - Projeto Front-end</b></p>
 
-![site-image](https://www.veed.io/view/f1ff8d93-b9aa-4117-9481-cc44ef5c7765)
+<img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExNjlpYzN5cHZvenZvcjhseW5qeTQ0eWVwcWpjbHJpd2htZXU3anRtayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/iQqp6rEZxvTZjkhkaI/giphy.gif" alt="Site-imagem" />
 
 ## About
 
@@ -45,8 +45,11 @@ Acompanhe o trello do projeto [trello](https://trello.com/b/iNi0Bn3N/flora-charm
 - [x] Criar página de Favoritos
 - [ ] Integrar com um Backend REST para clientes
 
+
 ## Outros
 
 # Site antes do redesign
 
-![Site-image](https://imgur.com/a/xPvRDJm)
+
+<img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExYTc3c25nbmxzdGYweDJmZTZ4MzRidXNmYjhsc3JrcWc1amYyYWN3biZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/6iDlY5sKfQ8eH368b6/giphy.gif" alt="Site-imagem"/>
+
